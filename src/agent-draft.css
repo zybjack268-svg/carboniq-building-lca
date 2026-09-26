@@ -1,5 +1,0 @@
-.agent-draft{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:21px 25px;margin-bottom:18px;border:1px solid #bbdfc5;border-radius:20px;background:linear-gradient(110deg,#eaf8ee,#f9fcf4)}
-.agent-draft h2{font-size:19px;margin:7px 0}
-.agent-draft p{font-size:12px;line-height:1.7;color:#597764;margin:0;max-width:690px}
-.agent-draft button{flex:none;display:flex;align-items:center;gap:8px;border:0;border-radius:10px;background:#168a5d;color:#fff;padding:11px 15px;font:inherit;font-size:12px;font-weight:800;cursor:pointer}
-@media(max-width:700px){.agent-draft{display:block}.agent-draft button{margin-top:15px}}

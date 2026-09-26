@@ -11,7 +11,7 @@ import { parseProjectWorkbook } from "./projectImport";
 import { recognizeMaterialColumns } from "./flexibleImport";
 import { runLcaAuditSkill } from "./lcaAuditSkill";
 import PortalLanding from "./PortalLanding";
-import { ModelSetup } from "./AgentWorkspace";
+import { ModelSetup } from "./ModelSetup";
 import WorkflowHub from "./WorkflowHub";
 import { buildAgentEvidence, parseAgentResponse, runProjectAgent } from "./agentEngine";
 import { loadStoredCandidates, saveStoredCandidates } from "./candidateStore";

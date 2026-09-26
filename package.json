@@ -1,27 +1,65 @@
 {
   "name": "dormitory-lca-agent",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.2.0",
   "type": "module",
-  "engines": { "node": ">=22.19.0" },
+  "main": "desktop/main.cjs",
+  "engines": {
+    "node": ">=22.19.0"
+  },
   "scripts": {
     "dev": "vite --host 127.0.0.1",
     "build": "vite build",
     "preview": "vite preview --host 127.0.0.1",
     "local": "npm run build && node server/local.mjs",
-    "local:lan": "npm run build && node server/local.mjs --lan"
+    "local:lan": "npm run build && node server/local.mjs --lan",
+    "desktop": "npm run build && electron .",
+    "package:win": "npm run build && node scripts/package-win.mjs"
   },
-  "dependencies": {
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.1.1",
+    "bot-avatars": "^0.1.1",
+    "electron": "^43.4.0",
+    "electron-builder": "^26.15.3",
     "lucide-react": "^0.468.0",
+    "mammoth": "^1.12.3",
+    "pdfjs-dist": "^6.3.289",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
     "read-excel-file": "^9.3.10",
     "recharts": "^3.10.1",
     "thinking-orbs": "^0.3.2",
-    "three": "0.185.1"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-react": "^6.1.1",
+    "three": "0.185.1",
     "vite": "^8.3.0"
+  },
+  "build": {
+    "appId": "com.carboniq.desktop",
+    "productName": "CarbonIQ",
+    "directories": {
+      "app": "desktop",
+      "output": "release"
+    },
+    "files": ["main.cjs", "preload.cjs", "setup.html", "package.json"],
+    "extraResources": [
+      { "from": "server/local.mjs", "to": "server/local.mjs" },
+      { "from": "dist", "to": "dist" }
+    ],
+    "asar": true,
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "artifactName": "CarbonIQ-Setup-${version}-${arch}.${ext}"
+    }
   }
 }

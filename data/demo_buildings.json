@@ -1,0 +1,7032 @@
+{
+  "buildings": [
+    {
+      "id": 1,
+      "name": "Zalgirio g. 90 daugiabutis",
+      "building_type": "gyvenamasis",
+      "address": "Zalgirio g. 164",
+      "city": "Vilnius",
+      "area_m2": 4200,
+      "floors": 9,
+      "construction_year": 2024,
+      "description": "Zalgirio g. 90 daugiabutis - gyvenamasis pastatas, Vilnius"
+    },
+    {
+      "id": 2,
+      "name": "Konstitucijos pr. 7 biuru centras",
+      "building_type": "komercinis",
+      "address": "Konstitucijos g. 176",
+      "city": "Vilnius",
+      "area_m2": 12500,
+      "floors": 15,
+      "construction_year": 2023,
+      "description": "Konstitucijos pr. 7 biuru centras - komercinis pastatas, Vilnius"
+    },
+    {
+      "id": 3,
+      "name": "Taikos pr. 88 prekybos centras",
+      "building_type": "komercinis",
+      "address": "Taikos g. 195",
+      "city": "Klaipeda",
+      "area_m2": 8500,
+      "floors": 3,
+      "construction_year": 2022,
+      "description": "Taikos pr. 88 prekybos centras - komercinis pastatas, Klaipeda"
+    },
+    {
+      "id": 4,
+      "name": "Laisves al. 40 visuomeninis pastatas",
+      "building_type": "viesasis",
+      "address": "Laisves g. 143",
+      "city": "Kaunas",
+      "area_m2": 3200,
+      "floors": 4,
+      "construction_year": 2025,
+      "description": "Laisves al. 40 visuomeninis pastatas - viesasis pastatas, Kaunas"
+    },
+    {
+      "id": 5,
+      "name": "Pramonininku g. 12 sandelis",
+      "building_type": "pramoninis",
+      "address": "Pramonininku g. 140",
+      "city": "Siauliai",
+      "area_m2": 6000,
+      "floors": 1,
+      "construction_year": 2021,
+      "description": "Pramonininku g. 12 sandelis - pramoninis pastatas, Siauliai"
+    },
+    {
+      "id": 6,
+      "name": "Savanoriu pr. 180 gyvenamasis kompleksas",
+      "building_type": "gyvenamasis",
+      "address": "Savanoriu g. 131",
+      "city": "Vilnius",
+      "area_m2": 7800,
+      "floors": 12,
+      "construction_year": 2024,
+      "description": "Savanoriu pr. 180 gyvenamasis kompleksas - gyvenamasis pastatas, Vilnius"
+    },
+    {
+      "id": 7,
+      "name": "Nemuno g. 5 mokykla",
+      "building_type": "viesasis",
+      "address": "Nemuno g. 179",
+      "city": "Panevezys",
+      "area_m2": 2800,
+      "floors": 3,
+      "construction_year": 2020,
+      "description": "Nemuno g. 5 mokykla - viesasis pastatas, Panevezys"
+    },
+    {
+      "id": 8,
+      "name": "Vytauto g. 22 mišrios paskirties pastatas",
+      "building_type": "mišrus",
+      "address": "Vytauto g. 108",
+      "city": "Kaunas",
+      "area_m2": 5400,
+      "floors": 6,
+      "construction_year": 2023,
+      "description": "Vytauto g. 22 mišrios paskirties pastatas - mišrus pastatas, Kaunas"
+    },
+    {
+      "id": 9,
+      "name": "Klaipedos g. 15 ligonine",
+      "building_type": "viesasis",
+      "address": "Klaipedos g. 157",
+      "city": "Siauliai",
+      "area_m2": 9200,
+      "floors": 5,
+      "construction_year": 2019,
+      "description": "Klaipedos g. 15 ligonine - viesasis pastatas, Siauliai"
+    },
+    {
+      "id": 10,
+      "name": "Gedimino pr. 1 biuru pastatas",
+      "building_type": "komercinis",
+      "address": "Gedimino g. 114",
+      "city": "Vilnius",
+      "area_m2": 4800,
+      "floors": 8,
+      "construction_year": 2025,
+      "description": "Gedimino pr. 1 biuru pastatas - komercinis pastatas, Vilnius"
+    },
+    {
+      "id": 11,
+      "name": "Draugystes g. 19 sporto hale",
+      "building_type": "viesasis",
+      "address": "Draugystes g. 27",
+      "city": "Kaunas",
+      "area_m2": 3600,
+      "floors": 2,
+      "construction_year": 2024,
+      "description": "Draugystes g. 19 sporto hale - viesasis pastatas, Kaunas"
+    },
+    {
+      "id": 12,
+      "name": "Baltijos pr. 120 logistikos centras",
+      "building_type": "pramoninis",
+      "address": "Baltijos g. 142",
+      "city": "Klaipeda",
+      "area_m2": 15000,
+      "floors": 2,
+      "construction_year": 2022,
+      "description": "Baltijos pr. 120 logistikos centras - pramoninis pastatas, Klaipeda"
+    },
+    {
+      "id": 13,
+      "name": "Ukmerges g. 280 daugiabutis",
+      "building_type": "gyvenamasis",
+      "address": "Ukmerges g. 78",
+      "city": "Vilnius",
+      "area_m2": 5600,
+      "floors": 16,
+      "construction_year": 2026,
+      "description": "Ukmerges g. 280 daugiabutis - gyvenamasis pastatas, Vilnius"
+    },
+    {
+      "id": 14,
+      "name": "Tilzes g. 44 kulturos centras",
+      "building_type": "viesasis",
+      "address": "Tilzes g. 60",
+      "city": "Siauliai",
+      "area_m2": 2100,
+      "floors": 2,
+      "construction_year": 2023,
+      "description": "Tilzes g. 44 kulturos centras - viesasis pastatas, Siauliai"
+    },
+    {
+      "id": 15,
+      "name": "Jonavos g. 60 gamybos cechas",
+      "building_type": "pramoninis",
+      "address": "Jonavos g. 129",
+      "city": "Kaunas",
+      "area_m2": 4500,
+      "floors": 1,
+      "construction_year": 2021,
+      "description": "Jonavos g. 60 gamybos cechas - pramoninis pastatas, Kaunas"
+    },
+    {
+      "id": 16,
+      "name": "Sodu g. 8 individualus namas",
+      "building_type": "gyvenamasis",
+      "address": "Sodu g. 143",
+      "city": "Alytus",
+      "area_m2": 180,
+      "floors": 2,
+      "construction_year": 2025,
+      "description": "Sodu g. 8 individualus namas - gyvenamasis pastatas, Alytus"
+    },
+    {
+      "id": 17,
+      "name": "Vilniaus g. 33 viešbutis",
+      "building_type": "komercinis",
+      "address": "Vilniaus g. 81",
+      "city": "Marijampole",
+      "area_m2": 3400,
+      "floors": 5,
+      "construction_year": 2024,
+      "description": "Vilniaus g. 33 viešbutis - komercinis pastatas, Marijampole"
+    },
+    {
+      "id": 18,
+      "name": "Ezero g. 10 vaikų darzelis",
+      "building_type": "viesasis",
+      "address": "Ezero g. 64",
+      "city": "Utena",
+      "area_m2": 1200,
+      "floors": 1,
+      "construction_year": 2023,
+      "description": "Ezero g. 10 vaikų darzelis - viesasis pastatas, Utena"
+    },
+    {
+      "id": 19,
+      "name": "Respublikos g. 55 gyvenamasis namas",
+      "building_type": "gyvenamasis",
+      "address": "Respublikos g. 65",
+      "city": "Panevezys",
+      "area_m2": 320,
+      "floors": 2,
+      "construction_year": 2022,
+      "description": "Respublikos g. 55 gyvenamasis namas - gyvenamasis pastatas, Panevezys"
+    },
+    {
+      "id": 20,
+      "name": "Pergales g. 7 administracinis pastatas",
+      "building_type": "komercinis",
+      "address": "Pergales g. 135",
+      "city": "Kedainiai",
+      "area_m2": 2200,
+      "floors": 3,
+      "construction_year": 2024,
+      "description": "Pergales g. 7 administracinis pastatas - komercinis pastatas, Kedainiai"
+    }
+  ],
+  "materials": [
+    {
+      "id": 1,
+      "name": "Betonas C30/37",
+      "category": "pamatai",
+      "density_kg_m3": 2400,
+      "unit": "kg",
+      "gwp_per_unit": 0.132,
+      "odp_per_unit": 5.2e-09,
+      "ap_per_unit": 0.000345,
+      "ep_per_unit": 4.56e-05,
+      "penrt_per_unit": 1.05,
+      "pert_per_unit": 0.082,
+      "source": "EPD-BET-2024"
+    },
+    {
+      "id": 2,
+      "name": "Armatūrinis plienas B500B",
+      "category": "konstrukcinis",
+      "density_kg_m3": 7850,
+      "unit": "kg",
+      "gwp_per_unit": 1.99,
+      "odp_per_unit": 1.4e-08,
+      "ap_per_unit": 0.00623,
+      "ep_per_unit": 0.000512,
+      "penrt_per_unit": 22.5,
+      "pert_per_unit": 0.78,
+      "source": "EPD-STL-2024"
+    },
+    {
+      "id": 3,
+      "name": "Klijuota mediena (CLT)",
+      "category": "konstrukcinis",
+      "density_kg_m3": 470,
+      "unit": "kg",
+      "gwp_per_unit": -0.72,
+      "odp_per_unit": 2.1e-09,
+      "ap_per_unit": 0.000189,
+      "ep_per_unit": 3.12e-05,
+      "penrt_per_unit": 3.42,
+      "pert_per_unit": 7.85,
+      "source": "EPD-CLT-2024"
+    },
+    {
+      "id": 4,
+      "name": "Mineraline vata (100mm)",
+      "category": "izoliacija",
+      "density_kg_m3": 30,
+      "unit": "kg",
+      "gwp_per_unit": 1.28,
+      "odp_per_unit": 8.3e-09,
+      "ap_per_unit": 0.00412,
+      "ep_per_unit": 0.000234,
+      "penrt_per_unit": 16.8,
+      "pert_per_unit": 1.23,
+      "source": "EPD-MW-2024"
+    },
+    {
+      "id": 5,
+      "name": "EPS polistirenas (150mm)",
+      "category": "izoliacija",
+      "density_kg_m3": 20,
+      "unit": "kg",
+      "gwp_per_unit": 3.45,
+      "odp_per_unit": 1.2e-07,
+      "ap_per_unit": 0.00189,
+      "ep_per_unit": 8.9e-05,
+      "penrt_per_unit": 85.6,
+      "pert_per_unit": 0.34,
+      "source": "EPD-EPS-2024"
+    },
+    {
+      "id": 6,
+      "name": "Keramines plytos",
+      "category": "apdaila",
+      "density_kg_m3": 1800,
+      "unit": "kg",
+      "gwp_per_unit": 0.271,
+      "odp_per_unit": 4.1e-09,
+      "ap_per_unit": 0.000567,
+      "ep_per_unit": 6.78e-05,
+      "penrt_per_unit": 3.12,
+      "pert_per_unit": 0.15,
+      "source": "EPD-BRK-2024"
+    },
+    {
+      "id": 7,
+      "name": "Gipskartonis (12.5mm)",
+      "category": "apdaila",
+      "density_kg_m3": 680,
+      "unit": "kg",
+      "gwp_per_unit": 0.39,
+      "odp_per_unit": 3.5e-09,
+      "ap_per_unit": 0.00156,
+      "ep_per_unit": 0.000145,
+      "penrt_per_unit": 4.56,
+      "pert_per_unit": 0.28,
+      "source": "EPD-GYP-2024"
+    },
+    {
+      "id": 8,
+      "name": "PVC langai (dvigubas stikl.)",
+      "category": "langai_durys",
+      "density_kg_m3": null,
+      "unit": "m2",
+      "gwp_per_unit": 42.5,
+      "odp_per_unit": 3.8e-06,
+      "ap_per_unit": 0.0856,
+      "ep_per_unit": 0.00456,
+      "penrt_per_unit": 820,
+      "pert_per_unit": 12.5,
+      "source": "EPD-WIN-2024"
+    },
+    {
+      "id": 9,
+      "name": "Aliuminio fasadas",
+      "category": "apdaila",
+      "density_kg_m3": 2700,
+      "unit": "kg",
+      "gwp_per_unit": 8.24,
+      "odp_per_unit": 4.5e-07,
+      "ap_per_unit": 0.0445,
+      "ep_per_unit": 0.00234,
+      "penrt_per_unit": 112,
+      "pert_per_unit": 8.9,
+      "source": "EPD-ALU-2024"
+    },
+    {
+      "id": 10,
+      "name": "Bituminė stogo danga",
+      "category": "stogo_danga",
+      "density_kg_m3": 1100,
+      "unit": "kg",
+      "gwp_per_unit": 0.48,
+      "odp_per_unit": 6.7e-09,
+      "ap_per_unit": 0.00234,
+      "ep_per_unit": 0.000123,
+      "penrt_per_unit": 12.3,
+      "pert_per_unit": 0.45,
+      "source": "EPD-BIT-2024"
+    },
+    {
+      "id": 11,
+      "name": "EPDM stogo membrana",
+      "category": "stogo_danga",
+      "density_kg_m3": 1150,
+      "unit": "kg",
+      "gwp_per_unit": 2.85,
+      "odp_per_unit": 1.5e-08,
+      "ap_per_unit": 0.00567,
+      "ep_per_unit": 0.000345,
+      "penrt_per_unit": 45.6,
+      "pert_per_unit": 1.23,
+      "source": "EPD-EPDM-2024"
+    },
+    {
+      "id": 12,
+      "name": "Grindų plytelės (keramika)",
+      "category": "apdaila",
+      "density_kg_m3": 2000,
+      "unit": "kg",
+      "gwp_per_unit": 0.78,
+      "odp_per_unit": 5.6e-09,
+      "ap_per_unit": 0.00345,
+      "ep_per_unit": 0.000234,
+      "penrt_per_unit": 8.9,
+      "pert_per_unit": 0.56,
+      "source": "EPD-TIL-2024"
+    },
+    {
+      "id": 13,
+      "name": "Vario vamzdžiai",
+      "category": "inzinerine_sistema",
+      "density_kg_m3": 8940,
+      "unit": "kg",
+      "gwp_per_unit": 3.56,
+      "odp_per_unit": 2.3e-07,
+      "ap_per_unit": 0.0234,
+      "ep_per_unit": 0.00123,
+      "penrt_per_unit": 56.7,
+      "pert_per_unit": 3.45,
+      "source": "EPD-COP-2024"
+    },
+    {
+      "id": 14,
+      "name": "PE-X vamzdžiai",
+      "category": "inzinerine_sistema",
+      "density_kg_m3": 940,
+      "unit": "kg",
+      "gwp_per_unit": 2.12,
+      "odp_per_unit": 1.8e-08,
+      "ap_per_unit": 0.00456,
+      "ep_per_unit": 0.000234,
+      "penrt_per_unit": 78.9,
+      "pert_per_unit": 0.89,
+      "source": "EPD-PEX-2024"
+    },
+    {
+      "id": 15,
+      "name": "Betoniniai blokeles",
+      "category": "konstrukcinis",
+      "density_kg_m3": 2000,
+      "unit": "kg",
+      "gwp_per_unit": 0.089,
+      "odp_per_unit": 3.8e-09,
+      "ap_per_unit": 0.000234,
+      "ep_per_unit": 3.45e-05,
+      "penrt_per_unit": 0.78,
+      "pert_per_unit": 0.056,
+      "source": "EPD-BLK-2024"
+    }
+  ],
+  "building_materials": [
+    {
+      "building_id": 1,
+      "material_id": 1,
+      "material_name": "Betonas C30/37",
+      "quantity": 80862.85,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 1,
+      "material_id": 2,
+      "material_name": "Grindų plytelės (keramika)",
+      "quantity": 51088.51,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 1,
+      "material_id": 3,
+      "material_name": "EPS polistirenas (150mm)",
+      "quantity": 12849.22,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 1,
+      "material_id": 4,
+      "material_name": "Mineraline vata (100mm)",
+      "quantity": 18925.52,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 1,
+      "material_id": 5,
+      "material_name": "PE-X vamzdžiai",
+      "quantity": 70500.34,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 2,
+      "material_id": 1,
+      "material_name": "PE-X vamzdžiai",
+      "quantity": 106703.53,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 2,
+      "material_id": 2,
+      "material_name": "Vario vamzdžiai",
+      "quantity": 71344.93,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 2,
+      "material_id": 3,
+      "material_name": "Betoniniai blokeles",
+      "quantity": 151960.77,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 2,
+      "material_id": 4,
+      "material_name": "Betonas C30/37",
+      "quantity": 332124.08,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 2,
+      "material_id": 5,
+      "material_name": "Mineraline vata (100mm)",
+      "quantity": 75146.75,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 2,
+      "material_id": 6,
+      "material_name": "Grindų plytelės (keramika)",
+      "quantity": 272043.15,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 2,
+      "material_id": 7,
+      "material_name": "Keramines plytos",
+      "quantity": 221585.39,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 3,
+      "material_id": 1,
+      "material_name": "Vario vamzdžiai",
+      "quantity": 180217.67,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 3,
+      "material_id": 2,
+      "material_name": "Klijuota mediena (CLT)",
+      "quantity": 225125.34,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 3,
+      "material_id": 3,
+      "material_name": "PE-X vamzdžiai",
+      "quantity": 93338.21,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 3,
+      "material_id": 4,
+      "material_name": "EPDM stogo membrana",
+      "quantity": 96155.63,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 3,
+      "material_id": 5,
+      "material_name": "PVC langai (dvigubas stikl.)",
+      "quantity": 775.14,
+      "unit": "m2",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 3,
+      "material_id": 6,
+      "material_name": "Aliuminio fasadas",
+      "quantity": 101798.82,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 3,
+      "material_id": 7,
+      "material_name": "Betoniniai blokeles",
+      "quantity": 271452.08,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 3,
+      "material_id": 8,
+      "material_name": "EPS polistirenas (150mm)",
+      "quantity": 23265.22,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 3,
+      "material_id": 9,
+      "material_name": "Grindų plytelės (keramika)",
+      "quantity": 178578.82,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 4,
+      "material_id": 1,
+      "material_name": "Grindų plytelės (keramika)",
+      "quantity": 6286.54,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 4,
+      "material_id": 2,
+      "material_name": "PVC langai (dvigubas stikl.)",
+      "quantity": 735.66,
+      "unit": "m2",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 4,
+      "material_id": 3,
+      "material_name": "Klijuota mediena (CLT)",
+      "quantity": 65388.62,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 4,
+      "material_id": 4,
+      "material_name": "Mineraline vata (100mm)",
+      "quantity": 13413.81,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 4,
+      "material_id": 5,
+      "material_name": "EPS polistirenas (150mm)",
+      "quantity": 11199.54,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 4,
+      "material_id": 6,
+      "material_name": "Betoniniai blokeles",
+      "quantity": 43437.17,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 4,
+      "material_id": 7,
+      "material_name": "Betonas C30/37",
+      "quantity": 61873.25,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 4,
+      "material_id": 8,
+      "material_name": "Aliuminio fasadas",
+      "quantity": 29046.8,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 4,
+      "material_id": 9,
+      "material_name": "Keramines plytos",
+      "quantity": 2443.27,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 4,
+      "material_id": 10,
+      "material_name": "Vario vamzdžiai",
+      "quantity": 6501.04,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 5,
+      "material_id": 1,
+      "material_name": "PE-X vamzdžiai",
+      "quantity": 54050.19,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 5,
+      "material_id": 2,
+      "material_name": "Keramines plytos",
+      "quantity": 151158.68,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 5,
+      "material_id": 3,
+      "material_name": "Bituminė stogo danga",
+      "quantity": 119469.6,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 5,
+      "material_id": 4,
+      "material_name": "Aliuminio fasadas",
+      "quantity": 95125.53,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 5,
+      "material_id": 5,
+      "material_name": "Klijuota mediena (CLT)",
+      "quantity": 171954.21,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 6,
+      "material_id": 1,
+      "material_name": "Gipskartonis (12.5mm)",
+      "quantity": 111573.37,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 6,
+      "material_id": 2,
+      "material_name": "Bituminė stogo danga",
+      "quantity": 60859.48,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 6,
+      "material_id": 3,
+      "material_name": "Mineraline vata (100mm)",
+      "quantity": 29731.92,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 6,
+      "material_id": 4,
+      "material_name": "EPS polistirenas (150mm)",
+      "quantity": 32667.0,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 6,
+      "material_id": 5,
+      "material_name": "Betonas C30/37",
+      "quantity": 164595.44,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 7,
+      "material_id": 1,
+      "material_name": "PVC langai (dvigubas stikl.)",
+      "quantity": 549.66,
+      "unit": "m2",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 7,
+      "material_id": 2,
+      "material_name": "Betonas C30/37",
+      "quantity": 92525.68,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 7,
+      "material_id": 3,
+      "material_name": "Aliuminio fasadas",
+      "quantity": 69083.57,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 7,
+      "material_id": 4,
+      "material_name": "Mineraline vata (100mm)",
+      "quantity": 15531.08,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 7,
+      "material_id": 5,
+      "material_name": "Armatūrinis plienas B500B",
+      "quantity": 57275.8,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 7,
+      "material_id": 6,
+      "material_name": "Betoniniai blokeles",
+      "quantity": 59307.36,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 7,
+      "material_id": 7,
+      "material_name": "Klijuota mediena (CLT)",
+      "quantity": 47620.2,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 7,
+      "material_id": 8,
+      "material_name": "Bituminė stogo danga",
+      "quantity": 23832.61,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 7,
+      "material_id": 9,
+      "material_name": "Keramines plytos",
+      "quantity": 5591.5,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 8,
+      "material_id": 1,
+      "material_name": "PE-X vamzdžiai",
+      "quantity": 26780.0,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 8,
+      "material_id": 2,
+      "material_name": "Armatūrinis plienas B500B",
+      "quantity": 137252.31,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 8,
+      "material_id": 3,
+      "material_name": "PVC langai (dvigubas stikl.)",
+      "quantity": 789.19,
+      "unit": "m2",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 8,
+      "material_id": 4,
+      "material_name": "Betonas C30/37",
+      "quantity": 119235.6,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 8,
+      "material_id": 5,
+      "material_name": "Aliuminio fasadas",
+      "quantity": 25966.62,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 8,
+      "material_id": 6,
+      "material_name": "Grindų plytelės (keramika)",
+      "quantity": 91399.08,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 8,
+      "material_id": 7,
+      "material_name": "Keramines plytos",
+      "quantity": 13775.8,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 9,
+      "material_id": 1,
+      "material_name": "Gipskartonis (12.5mm)",
+      "quantity": 93682.26,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 9,
+      "material_id": 2,
+      "material_name": "Keramines plytos",
+      "quantity": 130739.09,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 9,
+      "material_id": 3,
+      "material_name": "Betonas C30/37",
+      "quantity": 302229.99,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 9,
+      "material_id": 4,
+      "material_name": "PVC langai (dvigubas stikl.)",
+      "quantity": 2100.72,
+      "unit": "m2",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 9,
+      "material_id": 5,
+      "material_name": "PE-X vamzdžiai",
+      "quantity": 22726.24,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 9,
+      "material_id": 6,
+      "material_name": "Klijuota mediena (CLT)",
+      "quantity": 189260.67,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 9,
+      "material_id": 7,
+      "material_name": "Grindų plytelės (keramika)",
+      "quantity": 110396.01,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 9,
+      "material_id": 8,
+      "material_name": "Mineraline vata (100mm)",
+      "quantity": 30064.57,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 9,
+      "material_id": 9,
+      "material_name": "Bituminė stogo danga",
+      "quantity": 27886.02,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 9,
+      "material_id": 10,
+      "material_name": "Betoniniai blokeles",
+      "quantity": 286295.4,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 10,
+      "material_id": 1,
+      "material_name": "PE-X vamzdžiai",
+      "quantity": 81208.13,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 10,
+      "material_id": 2,
+      "material_name": "Bituminė stogo danga",
+      "quantity": 68809.52,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 10,
+      "material_id": 3,
+      "material_name": "Gipskartonis (12.5mm)",
+      "quantity": 18146.92,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 10,
+      "material_id": 4,
+      "material_name": "EPS polistirenas (150mm)",
+      "quantity": 17237.77,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 10,
+      "material_id": 5,
+      "material_name": "Betoniniai blokeles",
+      "quantity": 68046.25,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 10,
+      "material_id": 6,
+      "material_name": "EPDM stogo membrana",
+      "quantity": 9622.25,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 10,
+      "material_id": 7,
+      "material_name": "Betonas C30/37",
+      "quantity": 156484.97,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 11,
+      "material_id": 1,
+      "material_name": "Keramines plytos",
+      "quantity": 75030.5,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 11,
+      "material_id": 2,
+      "material_name": "Gipskartonis (12.5mm)",
+      "quantity": 8619.37,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 11,
+      "material_id": 3,
+      "material_name": "Grindų plytelės (keramika)",
+      "quantity": 84021.39,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 11,
+      "material_id": 4,
+      "material_name": "PVC langai (dvigubas stikl.)",
+      "quantity": 724.62,
+      "unit": "m2",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 11,
+      "material_id": 5,
+      "material_name": "EPS polistirenas (150mm)",
+      "quantity": 15477.33,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 11,
+      "material_id": 6,
+      "material_name": "PE-X vamzdžiai",
+      "quantity": 60669.39,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 12,
+      "material_id": 1,
+      "material_name": "Gipskartonis (12.5mm)",
+      "quantity": 239117.03,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 12,
+      "material_id": 2,
+      "material_name": "PVC langai (dvigubas stikl.)",
+      "quantity": 3754.95,
+      "unit": "m2",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 12,
+      "material_id": 3,
+      "material_name": "Keramines plytos",
+      "quantity": 154433.2,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 12,
+      "material_id": 4,
+      "material_name": "Mineraline vata (100mm)",
+      "quantity": 79561.65,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 12,
+      "material_id": 5,
+      "material_name": "Grindų plytelės (keramika)",
+      "quantity": 11269.89,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 12,
+      "material_id": 6,
+      "material_name": "Bituminė stogo danga",
+      "quantity": 38940.67,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 12,
+      "material_id": 7,
+      "material_name": "Betoniniai blokeles",
+      "quantity": 369485.29,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 12,
+      "material_id": 8,
+      "material_name": "EPDM stogo membrana",
+      "quantity": 366836.95,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 12,
+      "material_id": 9,
+      "material_name": "Aliuminio fasadas",
+      "quantity": 376311.36,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 13,
+      "material_id": 1,
+      "material_name": "Gipskartonis (12.5mm)",
+      "quantity": 83699.71,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 13,
+      "material_id": 2,
+      "material_name": "PE-X vamzdžiai",
+      "quantity": 6577.14,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 13,
+      "material_id": 3,
+      "material_name": "PVC langai (dvigubas stikl.)",
+      "quantity": 1282.57,
+      "unit": "m2",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 13,
+      "material_id": 4,
+      "material_name": "Armatūrinis plienas B500B",
+      "quantity": 154792.22,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 13,
+      "material_id": 5,
+      "material_name": "Mineraline vata (100mm)",
+      "quantity": 15913.83,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 13,
+      "material_id": 6,
+      "material_name": "Betoniniai blokeles",
+      "quantity": 129918.48,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 14,
+      "material_id": 1,
+      "material_name": "Betonas C30/37",
+      "quantity": 45627.56,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 14,
+      "material_id": 2,
+      "material_name": "Bituminė stogo danga",
+      "quantity": 2756.83,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 14,
+      "material_id": 3,
+      "material_name": "Aliuminio fasadas",
+      "quantity": 6279.25,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 14,
+      "material_id": 4,
+      "material_name": "Keramines plytos",
+      "quantity": 19959.96,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 14,
+      "material_id": 5,
+      "material_name": "PE-X vamzdžiai",
+      "quantity": 34102.84,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 14,
+      "material_id": 6,
+      "material_name": "Mineraline vata (100mm)",
+      "quantity": 11538.58,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 14,
+      "material_id": 7,
+      "material_name": "Armatūrinis plienas B500B",
+      "quantity": 33150.34,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 14,
+      "material_id": 8,
+      "material_name": "PVC langai (dvigubas stikl.)",
+      "quantity": 270.43,
+      "unit": "m2",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 15,
+      "material_id": 1,
+      "material_name": "Bituminė stogo danga",
+      "quantity": 62539.99,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 15,
+      "material_id": 2,
+      "material_name": "Betonas C30/37",
+      "quantity": 158019.4,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 15,
+      "material_id": 3,
+      "material_name": "Grindų plytelės (keramika)",
+      "quantity": 65528.95,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 15,
+      "material_id": 4,
+      "material_name": "EPDM stogo membrana",
+      "quantity": 94179.43,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 15,
+      "material_id": 5,
+      "material_name": "Aliuminio fasadas",
+      "quantity": 8637.3,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 15,
+      "material_id": 6,
+      "material_name": "EPS polistirenas (150mm)",
+      "quantity": 17300.95,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 16,
+      "material_id": 1,
+      "material_name": "Armatūrinis plienas B500B",
+      "quantity": 4893.62,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 16,
+      "material_id": 2,
+      "material_name": "Vario vamzdžiai",
+      "quantity": 2950.9,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 16,
+      "material_id": 3,
+      "material_name": "EPS polistirenas (150mm)",
+      "quantity": 542.92,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 16,
+      "material_id": 4,
+      "material_name": "Bituminė stogo danga",
+      "quantity": 1429.27,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 16,
+      "material_id": 5,
+      "material_name": "Mineraline vata (100mm)",
+      "quantity": 509.45,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 16,
+      "material_id": 6,
+      "material_name": "Gipskartonis (12.5mm)",
+      "quantity": 500.68,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 16,
+      "material_id": 7,
+      "material_name": "Aliuminio fasadas",
+      "quantity": 1817.9,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 17,
+      "material_id": 1,
+      "material_name": "Gipskartonis (12.5mm)",
+      "quantity": 3196.42,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 17,
+      "material_id": 2,
+      "material_name": "Bituminė stogo danga",
+      "quantity": 82930.52,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 17,
+      "material_id": 3,
+      "material_name": "Betoniniai blokeles",
+      "quantity": 34214.98,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 17,
+      "material_id": 4,
+      "material_name": "Grindų plytelės (keramika)",
+      "quantity": 43455.45,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 17,
+      "material_id": 5,
+      "material_name": "EPDM stogo membrana",
+      "quantity": 56717.22,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 17,
+      "material_id": 6,
+      "material_name": "Vario vamzdžiai",
+      "quantity": 8492.05,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 17,
+      "material_id": 7,
+      "material_name": "EPS polistirenas (150mm)",
+      "quantity": 11395.47,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 17,
+      "material_id": 8,
+      "material_name": "Armatūrinis plienas B500B",
+      "quantity": 33533.91,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 17,
+      "material_id": 9,
+      "material_name": "Mineraline vata (100mm)",
+      "quantity": 13175.47,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 18,
+      "material_id": 1,
+      "material_name": "PVC langai (dvigubas stikl.)",
+      "quantity": 209.09,
+      "unit": "m2",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 18,
+      "material_id": 2,
+      "material_name": "Betoniniai blokeles",
+      "quantity": 12957.95,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 18,
+      "material_id": 3,
+      "material_name": "Aliuminio fasadas",
+      "quantity": 9134.91,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 18,
+      "material_id": 4,
+      "material_name": "Vario vamzdžiai",
+      "quantity": 10745.07,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 18,
+      "material_id": 5,
+      "material_name": "Bituminė stogo danga",
+      "quantity": 25460.92,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 18,
+      "material_id": 6,
+      "material_name": "Klijuota mediena (CLT)",
+      "quantity": 23610.04,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 18,
+      "material_id": 7,
+      "material_name": "Keramines plytos",
+      "quantity": 18179.54,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 18,
+      "material_id": 8,
+      "material_name": "Grindų plytelės (keramika)",
+      "quantity": 22972.76,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 18,
+      "material_id": 9,
+      "material_name": "EPDM stogo membrana",
+      "quantity": 18992.85,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 18,
+      "material_id": 10,
+      "material_name": "Mineraline vata (100mm)",
+      "quantity": 4093.72,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 19,
+      "material_id": 1,
+      "material_name": "EPDM stogo membrana",
+      "quantity": 5773.89,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 19,
+      "material_id": 2,
+      "material_name": "PVC langai (dvigubas stikl.)",
+      "quantity": 73.49,
+      "unit": "m2",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 19,
+      "material_id": 3,
+      "material_name": "Keramines plytos",
+      "quantity": 5585.22,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 19,
+      "material_id": 4,
+      "material_name": "Aliuminio fasadas",
+      "quantity": 7572.68,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 19,
+      "material_id": 5,
+      "material_name": "Armatūrinis plienas B500B",
+      "quantity": 5081.26,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 20,
+      "material_id": 1,
+      "material_name": "Aliuminio fasadas",
+      "quantity": 20840.35,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 20,
+      "material_id": 2,
+      "material_name": "Vario vamzdžiai",
+      "quantity": 16827.75,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 20,
+      "material_id": 3,
+      "material_name": "Betoniniai blokeles",
+      "quantity": 53221.29,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 20,
+      "material_id": 4,
+      "material_name": "PE-X vamzdžiai",
+      "quantity": 7800.95,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 20,
+      "material_id": 5,
+      "material_name": "Betonas C30/37",
+      "quantity": 47389.83,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 20,
+      "material_id": 6,
+      "material_name": "Gipskartonis (12.5mm)",
+      "quantity": 53502.72,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 20,
+      "material_id": 7,
+      "material_name": "PVC langai (dvigubas stikl.)",
+      "quantity": 275.14,
+      "unit": "m2",
+      "lifecycle_phase": "A4-A5"
+    },
+    {
+      "building_id": 20,
+      "material_id": 8,
+      "material_name": "EPDM stogo membrana",
+      "quantity": 2724.18,
+      "unit": "kg",
+      "lifecycle_phase": "A1-A3"
+    },
+    {
+      "building_id": 20,
+      "material_id": 9,
+      "material_name": "Keramines plytos",
+      "quantity": 45241.28,
+      "unit": "kg",
+      "lifecycle_phase": "A4-A5"
+    }
+  ],
+  "lca_indicators": [
+    {
+      "building_id": 1,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "A1-A3",
+      "value": 692846.635286,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-02-10",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 1,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "A4-A5",
+      "value": 141809.767642,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-02-10",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 1,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "B1-B7",
+      "value": 583668.318824,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-02-10",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 1,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "C1-C4",
+      "value": 184470.469543,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-02-10",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 1,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "D",
+      "value": -24647.220397,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-02-10",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 1,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "A1-A3",
+      "value": 0.059471,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-02-10",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 1,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "A4-A5",
+      "value": 0.014248,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-02-10",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 1,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "B1-B7",
+      "value": 0.041566,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-02-10",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 1,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "C1-C4",
+      "value": 0.015448,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-02-10",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 1,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "D",
+      "value": -0.003977,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-02-10",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 1,
+      "indicator_type": "AP",
+      "lifecycle_phase": "A1-A3",
+      "value": 1874.946836,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-02-10",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 1,
+      "indicator_type": "AP",
+      "lifecycle_phase": "A4-A5",
+      "value": 385.600185,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-02-10",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 1,
+      "indicator_type": "AP",
+      "lifecycle_phase": "B1-B7",
+      "value": 1264.234927,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-02-10",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 1,
+      "indicator_type": "AP",
+      "lifecycle_phase": "C1-C4",
+      "value": 455.445469,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-02-10",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 1,
+      "indicator_type": "AP",
+      "lifecycle_phase": "D",
+      "value": -65.215989,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-02-10",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 1,
+      "indicator_type": "EP",
+      "lifecycle_phase": "A1-A3",
+      "value": 173.785057,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-02-10",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 1,
+      "indicator_type": "EP",
+      "lifecycle_phase": "A4-A5",
+      "value": 35.083299,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-02-10",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 1,
+      "indicator_type": "EP",
+      "lifecycle_phase": "B1-B7",
+      "value": 112.992554,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-02-10",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 1,
+      "indicator_type": "EP",
+      "lifecycle_phase": "C1-C4",
+      "value": 42.529288,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-02-10",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 1,
+      "indicator_type": "EP",
+      "lifecycle_phase": "D",
+      "value": -13.092065,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-02-10",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 1,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "A1-A3",
+      "value": 5762875.939396,
+      "unit": "MJ",
+      "calculation_date": "2026-02-10",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 1,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "A4-A5",
+      "value": 1193824.914376,
+      "unit": "MJ",
+      "calculation_date": "2026-02-10",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 1,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "B1-B7",
+      "value": 3674631.354337,
+      "unit": "MJ",
+      "calculation_date": "2026-02-10",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 1,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "C1-C4",
+      "value": 1904054.449922,
+      "unit": "MJ",
+      "calculation_date": "2026-02-10",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 1,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "D",
+      "value": -476072.543668,
+      "unit": "MJ",
+      "calculation_date": "2026-02-10",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 1,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "A1-A3",
+      "value": 745250.353229,
+      "unit": "MJ",
+      "calculation_date": "2026-02-10",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 1,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "A4-A5",
+      "value": 131281.427033,
+      "unit": "MJ",
+      "calculation_date": "2026-02-10",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 1,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "B1-B7",
+      "value": 433176.40641,
+      "unit": "MJ",
+      "calculation_date": "2026-02-10",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 1,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "C1-C4",
+      "value": 217695.353178,
+      "unit": "MJ",
+      "calculation_date": "2026-02-10",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 1,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "D",
+      "value": -50797.863036,
+      "unit": "MJ",
+      "calculation_date": "2026-02-10",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 2,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "A1-A3",
+      "value": 2473799.437588,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-01-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 2,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "A4-A5",
+      "value": 522660.746265,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-01-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 2,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "B1-B7",
+      "value": 1430350.889491,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-01-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 2,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "C1-C4",
+      "value": 648838.23892,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-01-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 2,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "D",
+      "value": -220637.726969,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-01-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 2,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "A1-A3",
+      "value": 0.162164,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-01-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 2,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "A4-A5",
+      "value": 0.034364,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-01-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 2,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "B1-B7",
+      "value": 0.103755,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-01-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 2,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "C1-C4",
+      "value": 0.03508,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-01-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 2,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "D",
+      "value": -0.005657,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-01-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 2,
+      "indicator_type": "AP",
+      "lifecycle_phase": "A1-A3",
+      "value": 4750.639164,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-01-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 2,
+      "indicator_type": "AP",
+      "lifecycle_phase": "A4-A5",
+      "value": 1054.762392,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-01-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 2,
+      "indicator_type": "AP",
+      "lifecycle_phase": "B1-B7",
+      "value": 3457.724837,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-01-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 2,
+      "indicator_type": "AP",
+      "lifecycle_phase": "C1-C4",
+      "value": 1285.392313,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-01-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 2,
+      "indicator_type": "AP",
+      "lifecycle_phase": "D",
+      "value": -176.928309,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-01-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 2,
+      "indicator_type": "EP",
+      "lifecycle_phase": "A1-A3",
+      "value": 1072.412539,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-01-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 2,
+      "indicator_type": "EP",
+      "lifecycle_phase": "A4-A5",
+      "value": 210.302763,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-01-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 2,
+      "indicator_type": "EP",
+      "lifecycle_phase": "B1-B7",
+      "value": 553.228766,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-01-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 2,
+      "indicator_type": "EP",
+      "lifecycle_phase": "C1-C4",
+      "value": 238.903233,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-01-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 2,
+      "indicator_type": "EP",
+      "lifecycle_phase": "D",
+      "value": -79.045497,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-01-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 2,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "A1-A3",
+      "value": 37450987.979492,
+      "unit": "MJ",
+      "calculation_date": "2026-01-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 2,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "A4-A5",
+      "value": 7411208.905393,
+      "unit": "MJ",
+      "calculation_date": "2026-01-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 2,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "B1-B7",
+      "value": 21289692.241576,
+      "unit": "MJ",
+      "calculation_date": "2026-01-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 2,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "C1-C4",
+      "value": 7226699.477855,
+      "unit": "MJ",
+      "calculation_date": "2026-01-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 2,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "D",
+      "value": -3002575.312424,
+      "unit": "MJ",
+      "calculation_date": "2026-01-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 2,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "A1-A3",
+      "value": 3490243.312428,
+      "unit": "MJ",
+      "calculation_date": "2026-01-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 2,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "A4-A5",
+      "value": 776101.177699,
+      "unit": "MJ",
+      "calculation_date": "2026-01-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 2,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "B1-B7",
+      "value": 2667527.341978,
+      "unit": "MJ",
+      "calculation_date": "2026-01-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 2,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "C1-C4",
+      "value": 863945.510542,
+      "unit": "MJ",
+      "calculation_date": "2026-01-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 2,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "D",
+      "value": -373552.970857,
+      "unit": "MJ",
+      "calculation_date": "2026-01-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 3,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "A1-A3",
+      "value": 2288201.822766,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-03-04",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 3,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "A4-A5",
+      "value": 396723.484191,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-03-04",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 3,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "B1-B7",
+      "value": 1139378.104447,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-03-04",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 3,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "C1-C4",
+      "value": 528369.64753,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-03-04",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 3,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "D",
+      "value": -127343.984228,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-03-04",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 3,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "A1-A3",
+      "value": 0.151204,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-03-04",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 3,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "A4-A5",
+      "value": 0.037507,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-03-04",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 3,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "B1-B7",
+      "value": 0.079124,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-03-04",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 3,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "C1-C4",
+      "value": 0.036238,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-03-04",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 3,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "D",
+      "value": -0.012011,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-03-04",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 3,
+      "indicator_type": "AP",
+      "lifecycle_phase": "A1-A3",
+      "value": 3144.45993,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-03-04",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 3,
+      "indicator_type": "AP",
+      "lifecycle_phase": "A4-A5",
+      "value": 781.210835,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-03-04",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 3,
+      "indicator_type": "AP",
+      "lifecycle_phase": "B1-B7",
+      "value": 2318.046691,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-03-04",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 3,
+      "indicator_type": "AP",
+      "lifecycle_phase": "C1-C4",
+      "value": 872.342223,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-03-04",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 3,
+      "indicator_type": "AP",
+      "lifecycle_phase": "D",
+      "value": -306.478755,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-03-04",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 3,
+      "indicator_type": "EP",
+      "lifecycle_phase": "A1-A3",
+      "value": 659.643599,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-03-04",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 3,
+      "indicator_type": "EP",
+      "lifecycle_phase": "A4-A5",
+      "value": 130.653658,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-03-04",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 3,
+      "indicator_type": "EP",
+      "lifecycle_phase": "B1-B7",
+      "value": 315.156107,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-03-04",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 3,
+      "indicator_type": "EP",
+      "lifecycle_phase": "C1-C4",
+      "value": 184.384583,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-03-04",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 3,
+      "indicator_type": "EP",
+      "lifecycle_phase": "D",
+      "value": -64.029246,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-03-04",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 3,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "A1-A3",
+      "value": 24904415.514931,
+      "unit": "MJ",
+      "calculation_date": "2026-03-04",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 3,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "A4-A5",
+      "value": 4208609.214957,
+      "unit": "MJ",
+      "calculation_date": "2026-03-04",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 3,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "B1-B7",
+      "value": 14486966.476479,
+      "unit": "MJ",
+      "calculation_date": "2026-03-04",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 3,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "C1-C4",
+      "value": 5160919.262644,
+      "unit": "MJ",
+      "calculation_date": "2026-03-04",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 3,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "D",
+      "value": -781748.272788,
+      "unit": "MJ",
+      "calculation_date": "2026-03-04",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 3,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "A1-A3",
+      "value": 2477970.335544,
+      "unit": "MJ",
+      "calculation_date": "2026-03-04",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 3,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "A4-A5",
+      "value": 417831.772253,
+      "unit": "MJ",
+      "calculation_date": "2026-03-04",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 3,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "B1-B7",
+      "value": 1540621.026657,
+      "unit": "MJ",
+      "calculation_date": "2026-03-04",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 3,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "C1-C4",
+      "value": 543411.148941,
+      "unit": "MJ",
+      "calculation_date": "2026-03-04",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 3,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "D",
+      "value": -195399.997766,
+      "unit": "MJ",
+      "calculation_date": "2026-03-04",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 4,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "A1-A3",
+      "value": 804935.805053,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-02-03",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 4,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "A4-A5",
+      "value": 178775.655179,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-02-03",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 4,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "B1-B7",
+      "value": 441376.170431,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-02-03",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 4,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "C1-C4",
+      "value": 160770.988971,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-02-03",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 4,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "D",
+      "value": -63528.480213,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-02-03",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 4,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "A1-A3",
+      "value": 0.050488,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-02-03",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 4,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "A4-A5",
+      "value": 0.009968,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-02-03",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 4,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "B1-B7",
+      "value": 0.022623,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-02-03",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 4,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "C1-C4",
+      "value": 0.012697,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-02-03",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 4,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "D",
+      "value": -0.003014,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-02-03",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 4,
+      "indicator_type": "AP",
+      "lifecycle_phase": "A1-A3",
+      "value": 1452.159051,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-02-03",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 4,
+      "indicator_type": "AP",
+      "lifecycle_phase": "A4-A5",
+      "value": 319.850035,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-02-03",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 4,
+      "indicator_type": "AP",
+      "lifecycle_phase": "B1-B7",
+      "value": 955.743212,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-02-03",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 4,
+      "indicator_type": "AP",
+      "lifecycle_phase": "C1-C4",
+      "value": 463.252871,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-02-03",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 4,
+      "indicator_type": "AP",
+      "lifecycle_phase": "D",
+      "value": -113.877925,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-02-03",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 4,
+      "indicator_type": "EP",
+      "lifecycle_phase": "A1-A3",
+      "value": 189.419669,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-02-03",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 4,
+      "indicator_type": "EP",
+      "lifecycle_phase": "A4-A5",
+      "value": 50.319386,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-02-03",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 4,
+      "indicator_type": "EP",
+      "lifecycle_phase": "B1-B7",
+      "value": 129.740305,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-02-03",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 4,
+      "indicator_type": "EP",
+      "lifecycle_phase": "C1-C4",
+      "value": 57.043318,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-02-03",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 4,
+      "indicator_type": "EP",
+      "lifecycle_phase": "D",
+      "value": -22.41179,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-02-03",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 4,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "A1-A3",
+      "value": 4059801.210128,
+      "unit": "MJ",
+      "calculation_date": "2026-02-03",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 4,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "A4-A5",
+      "value": 847496.059609,
+      "unit": "MJ",
+      "calculation_date": "2026-02-03",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 4,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "B1-B7",
+      "value": 2237464.522515,
+      "unit": "MJ",
+      "calculation_date": "2026-02-03",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 4,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "C1-C4",
+      "value": 1237861.653554,
+      "unit": "MJ",
+      "calculation_date": "2026-02-03",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 4,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "D",
+      "value": -224396.036585,
+      "unit": "MJ",
+      "calculation_date": "2026-02-03",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 4,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "A1-A3",
+      "value": 832837.496625,
+      "unit": "MJ",
+      "calculation_date": "2026-02-03",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 4,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "A4-A5",
+      "value": 176081.671901,
+      "unit": "MJ",
+      "calculation_date": "2026-02-03",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 4,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "B1-B7",
+      "value": 437287.853606,
+      "unit": "MJ",
+      "calculation_date": "2026-02-03",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 4,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "C1-C4",
+      "value": 180622.503978,
+      "unit": "MJ",
+      "calculation_date": "2026-02-03",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 4,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "D",
+      "value": -88074.140033,
+      "unit": "MJ",
+      "calculation_date": "2026-02-03",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 5,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "A1-A3",
+      "value": 2049067.459574,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-02-11",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 5,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "A4-A5",
+      "value": 466792.813959,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-02-11",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 5,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "B1-B7",
+      "value": 984053.315873,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-02-11",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 5,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "C1-C4",
+      "value": 531991.995443,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-02-11",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 5,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "D",
+      "value": -162175.878972,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-02-11",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 5,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "A1-A3",
+      "value": 0.137029,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-02-11",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 5,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "A4-A5",
+      "value": 0.029884,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-02-11",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 5,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "B1-B7",
+      "value": 0.072303,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-02-11",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 5,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "C1-C4",
+      "value": 0.035563,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-02-11",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 5,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "D",
+      "value": -0.009226,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-02-11",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 5,
+      "indicator_type": "AP",
+      "lifecycle_phase": "A1-A3",
+      "value": 3718.731098,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-02-11",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 5,
+      "indicator_type": "AP",
+      "lifecycle_phase": "A4-A5",
+      "value": 1047.313144,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-02-11",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 5,
+      "indicator_type": "AP",
+      "lifecycle_phase": "B1-B7",
+      "value": 2744.500643,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-02-11",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 5,
+      "indicator_type": "AP",
+      "lifecycle_phase": "C1-C4",
+      "value": 1028.588302,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-02-11",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 5,
+      "indicator_type": "AP",
+      "lifecycle_phase": "D",
+      "value": -226.882077,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-02-11",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 5,
+      "indicator_type": "EP",
+      "lifecycle_phase": "A1-A3",
+      "value": 304.494622,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-02-11",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 5,
+      "indicator_type": "EP",
+      "lifecycle_phase": "A4-A5",
+      "value": 71.834756,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-02-11",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 5,
+      "indicator_type": "EP",
+      "lifecycle_phase": "B1-B7",
+      "value": 265.124928,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-02-11",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 5,
+      "indicator_type": "EP",
+      "lifecycle_phase": "C1-C4",
+      "value": 109.846276,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-02-11",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 5,
+      "indicator_type": "EP",
+      "lifecycle_phase": "D",
+      "value": -24.080258,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-02-11",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 5,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "A1-A3",
+      "value": 15885669.818422,
+      "unit": "MJ",
+      "calculation_date": "2026-02-11",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 5,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "A4-A5",
+      "value": 3003277.254444,
+      "unit": "MJ",
+      "calculation_date": "2026-02-11",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 5,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "B1-B7",
+      "value": 10441553.456092,
+      "unit": "MJ",
+      "calculation_date": "2026-02-11",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 5,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "C1-C4",
+      "value": 3005875.732425,
+      "unit": "MJ",
+      "calculation_date": "2026-02-11",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 5,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "D",
+      "value": -716042.454556,
+      "unit": "MJ",
+      "calculation_date": "2026-02-11",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 5,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "A1-A3",
+      "value": 2109857.163754,
+      "unit": "MJ",
+      "calculation_date": "2026-02-11",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 5,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "A4-A5",
+      "value": 436351.481719,
+      "unit": "MJ",
+      "calculation_date": "2026-02-11",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 5,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "B1-B7",
+      "value": 1511559.789365,
+      "unit": "MJ",
+      "calculation_date": "2026-02-11",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 5,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "C1-C4",
+      "value": 677634.172881,
+      "unit": "MJ",
+      "calculation_date": "2026-02-11",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 5,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "D",
+      "value": -158907.390438,
+      "unit": "MJ",
+      "calculation_date": "2026-02-11",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 6,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "A1-A3",
+      "value": 1209053.48057,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-02-14",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 6,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "A4-A5",
+      "value": 297518.901493,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-02-14",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 6,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "B1-B7",
+      "value": 700753.426713,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-02-14",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 6,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "C1-C4",
+      "value": 320447.483561,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-02-14",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 6,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "D",
+      "value": -91928.67773,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-02-14",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 6,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "A1-A3",
+      "value": 0.094552,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-02-14",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 6,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "A4-A5",
+      "value": 0.020817,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-02-14",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 6,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "B1-B7",
+      "value": 0.056609,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-02-14",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 6,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "C1-C4",
+      "value": 0.025298,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-02-14",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 6,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "D",
+      "value": -0.009615,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-02-14",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 6,
+      "indicator_type": "AP",
+      "lifecycle_phase": "A1-A3",
+      "value": 1994.911302,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-02-14",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 6,
+      "indicator_type": "AP",
+      "lifecycle_phase": "A4-A5",
+      "value": 534.888973,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-02-14",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 6,
+      "indicator_type": "AP",
+      "lifecycle_phase": "B1-B7",
+      "value": 1679.615859,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-02-14",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 6,
+      "indicator_type": "AP",
+      "lifecycle_phase": "C1-C4",
+      "value": 595.868946,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-02-14",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 6,
+      "indicator_type": "AP",
+      "lifecycle_phase": "D",
+      "value": -224.947086,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-02-14",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 6,
+      "indicator_type": "EP",
+      "lifecycle_phase": "A1-A3",
+      "value": 413.666523,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-02-14",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 6,
+      "indicator_type": "EP",
+      "lifecycle_phase": "A4-A5",
+      "value": 90.871748,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-02-14",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 6,
+      "indicator_type": "EP",
+      "lifecycle_phase": "B1-B7",
+      "value": 250.957986,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-02-14",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 6,
+      "indicator_type": "EP",
+      "lifecycle_phase": "C1-C4",
+      "value": 111.312804,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-02-14",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 6,
+      "indicator_type": "EP",
+      "lifecycle_phase": "D",
+      "value": -41.414054,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-02-14",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 6,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "A1-A3",
+      "value": 8823639.263228,
+      "unit": "MJ",
+      "calculation_date": "2026-02-14",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 6,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "A4-A5",
+      "value": 2135677.318349,
+      "unit": "MJ",
+      "calculation_date": "2026-02-14",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 6,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "B1-B7",
+      "value": 5346414.850563,
+      "unit": "MJ",
+      "calculation_date": "2026-02-14",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 6,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "C1-C4",
+      "value": 2627706.330239,
+      "unit": "MJ",
+      "calculation_date": "2026-02-14",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 6,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "D",
+      "value": -452132.64097,
+      "unit": "MJ",
+      "calculation_date": "2026-02-14",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 6,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "A1-A3",
+      "value": 1385748.180766,
+      "unit": "MJ",
+      "calculation_date": "2026-02-14",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 6,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "A4-A5",
+      "value": 422400.490696,
+      "unit": "MJ",
+      "calculation_date": "2026-02-14",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 6,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "B1-B7",
+      "value": 1275991.252431,
+      "unit": "MJ",
+      "calculation_date": "2026-02-14",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 6,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "C1-C4",
+      "value": 388150.489907,
+      "unit": "MJ",
+      "calculation_date": "2026-02-14",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 6,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "D",
+      "value": -75504.441469,
+      "unit": "MJ",
+      "calculation_date": "2026-02-14",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 7,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "A1-A3",
+      "value": 405322.201823,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-04-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 7,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "A4-A5",
+      "value": 75973.26822,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-04-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 7,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "B1-B7",
+      "value": 264196.458418,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-04-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 7,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "C1-C4",
+      "value": 112403.833284,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-04-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 7,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "D",
+      "value": -26595.9599,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-04-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 7,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "A1-A3",
+      "value": 0.03589,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-04-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 7,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "A4-A5",
+      "value": 0.009475,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-04-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 7,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "B1-B7",
+      "value": 0.022204,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-04-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 7,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "C1-C4",
+      "value": 0.009235,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-04-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 7,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "D",
+      "value": -0.003731,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-04-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 7,
+      "indicator_type": "AP",
+      "lifecycle_phase": "A1-A3",
+      "value": 1318.22115,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-04-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 7,
+      "indicator_type": "AP",
+      "lifecycle_phase": "A4-A5",
+      "value": 299.926007,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-04-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 7,
+      "indicator_type": "AP",
+      "lifecycle_phase": "B1-B7",
+      "value": 931.253475,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-04-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 7,
+      "indicator_type": "AP",
+      "lifecycle_phase": "C1-C4",
+      "value": 319.851373,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-04-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 7,
+      "indicator_type": "AP",
+      "lifecycle_phase": "D",
+      "value": -71.995288,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-04-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 7,
+      "indicator_type": "EP",
+      "lifecycle_phase": "A1-A3",
+      "value": 165.71446,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-04-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 7,
+      "indicator_type": "EP",
+      "lifecycle_phase": "A4-A5",
+      "value": 38.609101,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-04-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 7,
+      "indicator_type": "EP",
+      "lifecycle_phase": "B1-B7",
+      "value": 112.765736,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-04-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 7,
+      "indicator_type": "EP",
+      "lifecycle_phase": "C1-C4",
+      "value": 47.032362,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-04-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 7,
+      "indicator_type": "EP",
+      "lifecycle_phase": "D",
+      "value": -17.894902,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-04-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 7,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "A1-A3",
+      "value": 5756091.509367,
+      "unit": "MJ",
+      "calculation_date": "2026-04-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 7,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "A4-A5",
+      "value": 1140506.600626,
+      "unit": "MJ",
+      "calculation_date": "2026-04-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 7,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "B1-B7",
+      "value": 3515387.089344,
+      "unit": "MJ",
+      "calculation_date": "2026-04-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 7,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "C1-C4",
+      "value": 1100395.444581,
+      "unit": "MJ",
+      "calculation_date": "2026-04-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 7,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "D",
+      "value": -438209.298399,
+      "unit": "MJ",
+      "calculation_date": "2026-04-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 7,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "A1-A3",
+      "value": 456186.909408,
+      "unit": "MJ",
+      "calculation_date": "2026-04-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 7,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "A4-A5",
+      "value": 104388.829087,
+      "unit": "MJ",
+      "calculation_date": "2026-04-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 7,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "B1-B7",
+      "value": 330302.139343,
+      "unit": "MJ",
+      "calculation_date": "2026-04-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 7,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "C1-C4",
+      "value": 125812.790817,
+      "unit": "MJ",
+      "calculation_date": "2026-04-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 7,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "D",
+      "value": -30156.025368,
+      "unit": "MJ",
+      "calculation_date": "2026-04-17",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 8,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "A1-A3",
+      "value": 1280475.130842,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-05-28",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 8,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "A4-A5",
+      "value": 230536.932194,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-05-28",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 8,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "B1-B7",
+      "value": 783481.110318,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-05-28",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 8,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "C1-C4",
+      "value": 239630.971052,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-05-28",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 8,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "D",
+      "value": -87523.589982,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-05-28",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 8,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "A1-A3",
+      "value": 0.058971,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-05-28",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 8,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "A4-A5",
+      "value": 0.013472,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-05-28",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 8,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "B1-B7",
+      "value": 0.036874,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-05-28",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 8,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "C1-C4",
+      "value": 0.012031,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-05-28",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 8,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "D",
+      "value": -0.005427,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-05-28",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 8,
+      "indicator_type": "AP",
+      "lifecycle_phase": "A1-A3",
+      "value": 2095.74906,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-05-28",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 8,
+      "indicator_type": "AP",
+      "lifecycle_phase": "A4-A5",
+      "value": 454.635578,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-05-28",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 8,
+      "indicator_type": "AP",
+      "lifecycle_phase": "B1-B7",
+      "value": 1441.803251,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-05-28",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 8,
+      "indicator_type": "AP",
+      "lifecycle_phase": "C1-C4",
+      "value": 538.810461,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-05-28",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 8,
+      "indicator_type": "AP",
+      "lifecycle_phase": "D",
+      "value": -216.796401,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-05-28",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 8,
+      "indicator_type": "EP",
+      "lifecycle_phase": "A1-A3",
+      "value": 303.152484,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-05-28",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 8,
+      "indicator_type": "EP",
+      "lifecycle_phase": "A4-A5",
+      "value": 59.967841,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-05-28",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 8,
+      "indicator_type": "EP",
+      "lifecycle_phase": "B1-B7",
+      "value": 193.085934,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-05-28",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 8,
+      "indicator_type": "EP",
+      "lifecycle_phase": "C1-C4",
+      "value": 73.919732,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-05-28",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 8,
+      "indicator_type": "EP",
+      "lifecycle_phase": "D",
+      "value": -20.511224,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-05-28",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 8,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "A1-A3",
+      "value": 11361634.650103,
+      "unit": "MJ",
+      "calculation_date": "2026-05-28",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 8,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "A4-A5",
+      "value": 3123306.458887,
+      "unit": "MJ",
+      "calculation_date": "2026-05-28",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 8,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "B1-B7",
+      "value": 8468941.711175,
+      "unit": "MJ",
+      "calculation_date": "2026-05-28",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 8,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "C1-C4",
+      "value": 3314604.067643,
+      "unit": "MJ",
+      "calculation_date": "2026-05-28",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 8,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "D",
+      "value": -1000406.853265,
+      "unit": "MJ",
+      "calculation_date": "2026-05-28",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 8,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "A1-A3",
+      "value": 1235106.581099,
+      "unit": "MJ",
+      "calculation_date": "2026-05-28",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 8,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "A4-A5",
+      "value": 272448.666201,
+      "unit": "MJ",
+      "calculation_date": "2026-05-28",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 8,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "B1-B7",
+      "value": 602503.579032,
+      "unit": "MJ",
+      "calculation_date": "2026-05-28",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 8,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "C1-C4",
+      "value": 332817.170119,
+      "unit": "MJ",
+      "calculation_date": "2026-05-28",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 8,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "D",
+      "value": -62502.854122,
+      "unit": "MJ",
+      "calculation_date": "2026-05-28",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 9,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "A1-A3",
+      "value": 1659192.309073,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-02-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 9,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "A4-A5",
+      "value": 419418.052283,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-02-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 9,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "B1-B7",
+      "value": 1341157.174577,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-02-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 9,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "C1-C4",
+      "value": 504701.770957,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-02-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 9,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "D",
+      "value": -192991.246426,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-02-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 9,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "A1-A3",
+      "value": 0.094371,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-02-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 9,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "A4-A5",
+      "value": 0.020451,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-02-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 9,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "B1-B7",
+      "value": 0.072164,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-02-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 9,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "C1-C4",
+      "value": 0.022668,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-02-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 9,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "D",
+      "value": -0.003023,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-02-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 9,
+      "indicator_type": "AP",
+      "lifecycle_phase": "A1-A3",
+      "value": 3989.982211,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-02-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 9,
+      "indicator_type": "AP",
+      "lifecycle_phase": "A4-A5",
+      "value": 794.439359,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-02-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 9,
+      "indicator_type": "AP",
+      "lifecycle_phase": "B1-B7",
+      "value": 2487.150698,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-02-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 9,
+      "indicator_type": "AP",
+      "lifecycle_phase": "C1-C4",
+      "value": 759.876082,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-02-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 9,
+      "indicator_type": "AP",
+      "lifecycle_phase": "D",
+      "value": -142.599475,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-02-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 9,
+      "indicator_type": "EP",
+      "lifecycle_phase": "A1-A3",
+      "value": 505.124944,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-02-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 9,
+      "indicator_type": "EP",
+      "lifecycle_phase": "A4-A5",
+      "value": 142.212257,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-02-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 9,
+      "indicator_type": "EP",
+      "lifecycle_phase": "B1-B7",
+      "value": 324.056945,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-02-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 9,
+      "indicator_type": "EP",
+      "lifecycle_phase": "C1-C4",
+      "value": 164.682814,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-02-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 9,
+      "indicator_type": "EP",
+      "lifecycle_phase": "D",
+      "value": -17.194753,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-02-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 9,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "A1-A3",
+      "value": 16348693.398807,
+      "unit": "MJ",
+      "calculation_date": "2026-02-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 9,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "A4-A5",
+      "value": 3787315.436585,
+      "unit": "MJ",
+      "calculation_date": "2026-02-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 9,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "B1-B7",
+      "value": 9100410.377888,
+      "unit": "MJ",
+      "calculation_date": "2026-02-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 9,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "C1-C4",
+      "value": 4755723.461574,
+      "unit": "MJ",
+      "calculation_date": "2026-02-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 9,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "D",
+      "value": -729889.691931,
+      "unit": "MJ",
+      "calculation_date": "2026-02-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 9,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "A1-A3",
+      "value": 1780092.048196,
+      "unit": "MJ",
+      "calculation_date": "2026-02-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 9,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "A4-A5",
+      "value": 373632.991567,
+      "unit": "MJ",
+      "calculation_date": "2026-02-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 9,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "B1-B7",
+      "value": 1204381.759521,
+      "unit": "MJ",
+      "calculation_date": "2026-02-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 9,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "C1-C4",
+      "value": 485889.24815,
+      "unit": "MJ",
+      "calculation_date": "2026-02-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 9,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "D",
+      "value": -113364.994223,
+      "unit": "MJ",
+      "calculation_date": "2026-02-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 10,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "A1-A3",
+      "value": 672463.153233,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-04-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 10,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "A4-A5",
+      "value": 144343.566516,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-04-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 10,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "B1-B7",
+      "value": 456534.784964,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-04-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 10,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "C1-C4",
+      "value": 172667.966965,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-04-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 10,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "D",
+      "value": -53647.44789,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-04-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 10,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "A1-A3",
+      "value": 0.083827,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-04-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 10,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "A4-A5",
+      "value": 0.019268,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-04-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 10,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "B1-B7",
+      "value": 0.048265,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-04-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 10,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "C1-C4",
+      "value": 0.01954,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-04-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 10,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "D",
+      "value": -0.004115,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-04-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 10,
+      "indicator_type": "AP",
+      "lifecycle_phase": "A1-A3",
+      "value": 2093.593344,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-04-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 10,
+      "indicator_type": "AP",
+      "lifecycle_phase": "A4-A5",
+      "value": 446.519053,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-04-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 10,
+      "indicator_type": "AP",
+      "lifecycle_phase": "B1-B7",
+      "value": 1427.63038,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-04-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 10,
+      "indicator_type": "AP",
+      "lifecycle_phase": "C1-C4",
+      "value": 635.099259,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-04-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 10,
+      "indicator_type": "AP",
+      "lifecycle_phase": "D",
+      "value": -165.847997,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-04-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 10,
+      "indicator_type": "EP",
+      "lifecycle_phase": "A1-A3",
+      "value": 214.958594,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-04-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 10,
+      "indicator_type": "EP",
+      "lifecycle_phase": "A4-A5",
+      "value": 57.313485,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-04-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 10,
+      "indicator_type": "EP",
+      "lifecycle_phase": "B1-B7",
+      "value": 183.913126,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-04-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 10,
+      "indicator_type": "EP",
+      "lifecycle_phase": "C1-C4",
+      "value": 66.534251,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-04-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 10,
+      "indicator_type": "EP",
+      "lifecycle_phase": "D",
+      "value": -16.431911,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-04-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 10,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "A1-A3",
+      "value": 12080905.041179,
+      "unit": "MJ",
+      "calculation_date": "2026-04-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 10,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "A4-A5",
+      "value": 2879370.020493,
+      "unit": "MJ",
+      "calculation_date": "2026-04-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 10,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "B1-B7",
+      "value": 6800143.202555,
+      "unit": "MJ",
+      "calculation_date": "2026-04-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 10,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "C1-C4",
+      "value": 3149942.599656,
+      "unit": "MJ",
+      "calculation_date": "2026-04-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 10,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "D",
+      "value": -594119.984338,
+      "unit": "MJ",
+      "calculation_date": "2026-04-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 10,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "A1-A3",
+      "value": 1598295.393003,
+      "unit": "MJ",
+      "calculation_date": "2026-04-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 10,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "A4-A5",
+      "value": 410345.475943,
+      "unit": "MJ",
+      "calculation_date": "2026-04-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 10,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "B1-B7",
+      "value": 1298755.163058,
+      "unit": "MJ",
+      "calculation_date": "2026-04-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 10,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "C1-C4",
+      "value": 432183.101789,
+      "unit": "MJ",
+      "calculation_date": "2026-04-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 10,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "D",
+      "value": -86497.238129,
+      "unit": "MJ",
+      "calculation_date": "2026-04-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 11,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "A1-A3",
+      "value": 648164.777238,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-03-15",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 11,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "A4-A5",
+      "value": 113244.893288,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-03-15",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 11,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "B1-B7",
+      "value": 476133.054825,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-03-15",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 11,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "C1-C4",
+      "value": 167118.560023,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-03-15",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 11,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "D",
+      "value": -23610.173776,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-03-15",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 11,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "A1-A3",
+      "value": 0.046868,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-03-15",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 11,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "A4-A5",
+      "value": 0.008542,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-03-15",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 11,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "B1-B7",
+      "value": 0.036632,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-03-15",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 11,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "C1-C4",
+      "value": 0.014264,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-03-15",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 11,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "D",
+      "value": -0.001861,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-03-15",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 11,
+      "indicator_type": "AP",
+      "lifecycle_phase": "A1-A3",
+      "value": 1815.377963,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-03-15",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 11,
+      "indicator_type": "AP",
+      "lifecycle_phase": "A4-A5",
+      "value": 438.654976,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-03-15",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 11,
+      "indicator_type": "AP",
+      "lifecycle_phase": "B1-B7",
+      "value": 1215.336648,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-03-15",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 11,
+      "indicator_type": "AP",
+      "lifecycle_phase": "C1-C4",
+      "value": 440.51296,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-03-15",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 11,
+      "indicator_type": "AP",
+      "lifecycle_phase": "D",
+      "value": -203.264883,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-03-15",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 11,
+      "indicator_type": "EP",
+      "lifecycle_phase": "A1-A3",
+      "value": 184.670414,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-03-15",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 11,
+      "indicator_type": "EP",
+      "lifecycle_phase": "A4-A5",
+      "value": 38.340701,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-03-15",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 11,
+      "indicator_type": "EP",
+      "lifecycle_phase": "B1-B7",
+      "value": 140.997397,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-03-15",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 11,
+      "indicator_type": "EP",
+      "lifecycle_phase": "C1-C4",
+      "value": 48.414975,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-03-15",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 11,
+      "indicator_type": "EP",
+      "lifecycle_phase": "D",
+      "value": -18.952404,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-03-15",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 11,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "A1-A3",
+      "value": 6026048.454736,
+      "unit": "MJ",
+      "calculation_date": "2026-03-15",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 11,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "A4-A5",
+      "value": 1159102.175599,
+      "unit": "MJ",
+      "calculation_date": "2026-03-15",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 11,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "B1-B7",
+      "value": 4225061.844575,
+      "unit": "MJ",
+      "calculation_date": "2026-03-15",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 11,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "C1-C4",
+      "value": 1444369.439626,
+      "unit": "MJ",
+      "calculation_date": "2026-03-15",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 11,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "D",
+      "value": -317937.943533,
+      "unit": "MJ",
+      "calculation_date": "2026-03-15",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 11,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "A1-A3",
+      "value": 729492.805071,
+      "unit": "MJ",
+      "calculation_date": "2026-03-15",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 11,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "A4-A5",
+      "value": 187925.12486,
+      "unit": "MJ",
+      "calculation_date": "2026-03-15",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 11,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "B1-B7",
+      "value": 468037.222637,
+      "unit": "MJ",
+      "calculation_date": "2026-03-15",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 11,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "C1-C4",
+      "value": 161569.141268,
+      "unit": "MJ",
+      "calculation_date": "2026-03-15",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 11,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "D",
+      "value": -40332.499602,
+      "unit": "MJ",
+      "calculation_date": "2026-03-15",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 12,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "A1-A3",
+      "value": 2115543.890085,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-05-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 12,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "A4-A5",
+      "value": 598023.247191,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-05-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 12,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "B1-B7",
+      "value": 1991649.496109,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-05-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 12,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "C1-C4",
+      "value": 817523.688825,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-05-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 12,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "D",
+      "value": -174923.124997,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-05-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 12,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "A1-A3",
+      "value": 0.202418,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-05-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 12,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "A4-A5",
+      "value": 0.049061,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-05-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 12,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "B1-B7",
+      "value": 0.125207,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-05-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 12,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "C1-C4",
+      "value": 0.055213,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-05-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 12,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "D",
+      "value": -0.008122,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-05-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 12,
+      "indicator_type": "AP",
+      "lifecycle_phase": "A1-A3",
+      "value": 9297.735694,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-05-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 12,
+      "indicator_type": "AP",
+      "lifecycle_phase": "A4-A5",
+      "value": 2139.565228,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-05-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 12,
+      "indicator_type": "AP",
+      "lifecycle_phase": "B1-B7",
+      "value": 5799.023626,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-05-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 12,
+      "indicator_type": "AP",
+      "lifecycle_phase": "C1-C4",
+      "value": 2736.483951,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-05-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 12,
+      "indicator_type": "AP",
+      "lifecycle_phase": "D",
+      "value": -896.383395,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-05-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 12,
+      "indicator_type": "EP",
+      "lifecycle_phase": "A1-A3",
+      "value": 810.31374,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-05-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 12,
+      "indicator_type": "EP",
+      "lifecycle_phase": "A4-A5",
+      "value": 248.657601,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-05-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 12,
+      "indicator_type": "EP",
+      "lifecycle_phase": "B1-B7",
+      "value": 680.718173,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-05-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 12,
+      "indicator_type": "EP",
+      "lifecycle_phase": "C1-C4",
+      "value": 232.907207,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-05-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 12,
+      "indicator_type": "EP",
+      "lifecycle_phase": "D",
+      "value": -48.676521,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-05-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 12,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "A1-A3",
+      "value": 31205369.62319,
+      "unit": "MJ",
+      "calculation_date": "2026-05-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 12,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "A4-A5",
+      "value": 6938678.014835,
+      "unit": "MJ",
+      "calculation_date": "2026-05-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 12,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "B1-B7",
+      "value": 18546175.678575,
+      "unit": "MJ",
+      "calculation_date": "2026-05-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 12,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "C1-C4",
+      "value": 10354391.211073,
+      "unit": "MJ",
+      "calculation_date": "2026-05-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 12,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "D",
+      "value": -3153329.963504,
+      "unit": "MJ",
+      "calculation_date": "2026-05-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 12,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "A1-A3",
+      "value": 3536836.661498,
+      "unit": "MJ",
+      "calculation_date": "2026-05-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 12,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "A4-A5",
+      "value": 755009.606367,
+      "unit": "MJ",
+      "calculation_date": "2026-05-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 12,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "B1-B7",
+      "value": 2498725.434294,
+      "unit": "MJ",
+      "calculation_date": "2026-05-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 12,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "C1-C4",
+      "value": 1019331.482419,
+      "unit": "MJ",
+      "calculation_date": "2026-05-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 12,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "D",
+      "value": -175603.126557,
+      "unit": "MJ",
+      "calculation_date": "2026-05-19",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 13,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "A1-A3",
+      "value": 1159606.596883,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-01-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 13,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "A4-A5",
+      "value": 224834.903044,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-01-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 13,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "B1-B7",
+      "value": 713033.604122,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-01-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 13,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "C1-C4",
+      "value": 301426.635891,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-01-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 13,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "D",
+      "value": -47104.428226,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-01-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 13,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "A1-A3",
+      "value": 0.060725,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-01-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 13,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "A4-A5",
+      "value": 0.010686,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-01-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 13,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "B1-B7",
+      "value": 0.031417,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-01-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 13,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "C1-C4",
+      "value": 0.014967,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-01-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 13,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "D",
+      "value": -0.004513,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-01-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 13,
+      "indicator_type": "AP",
+      "lifecycle_phase": "A1-A3",
+      "value": 3026.809439,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-01-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 13,
+      "indicator_type": "AP",
+      "lifecycle_phase": "A4-A5",
+      "value": 536.33904,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-01-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 13,
+      "indicator_type": "AP",
+      "lifecycle_phase": "B1-B7",
+      "value": 2013.750337,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-01-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 13,
+      "indicator_type": "AP",
+      "lifecycle_phase": "C1-C4",
+      "value": 707.733909,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-01-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 13,
+      "indicator_type": "AP",
+      "lifecycle_phase": "D",
+      "value": -249.408407,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-01-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 13,
+      "indicator_type": "EP",
+      "lifecycle_phase": "A1-A3",
+      "value": 231.092017,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-01-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 13,
+      "indicator_type": "EP",
+      "lifecycle_phase": "A4-A5",
+      "value": 71.935493,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-01-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 13,
+      "indicator_type": "EP",
+      "lifecycle_phase": "B1-B7",
+      "value": 155.925032,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-01-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 13,
+      "indicator_type": "EP",
+      "lifecycle_phase": "C1-C4",
+      "value": 86.427677,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-01-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 13,
+      "indicator_type": "EP",
+      "lifecycle_phase": "D",
+      "value": -25.503169,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-01-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 13,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "A1-A3",
+      "value": 13483100.857174,
+      "unit": "MJ",
+      "calculation_date": "2026-01-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 13,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "A4-A5",
+      "value": 2831973.968402,
+      "unit": "MJ",
+      "calculation_date": "2026-01-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 13,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "B1-B7",
+      "value": 7166629.328874,
+      "unit": "MJ",
+      "calculation_date": "2026-01-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 13,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "C1-C4",
+      "value": 3381519.00768,
+      "unit": "MJ",
+      "calculation_date": "2026-01-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 13,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "D",
+      "value": -632387.129937,
+      "unit": "MJ",
+      "calculation_date": "2026-01-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 13,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "A1-A3",
+      "value": 1179504.638922,
+      "unit": "MJ",
+      "calculation_date": "2026-01-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 13,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "A4-A5",
+      "value": 262064.326783,
+      "unit": "MJ",
+      "calculation_date": "2026-01-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 13,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "B1-B7",
+      "value": 760368.214772,
+      "unit": "MJ",
+      "calculation_date": "2026-01-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 13,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "C1-C4",
+      "value": 332137.977617,
+      "unit": "MJ",
+      "calculation_date": "2026-01-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 13,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "D",
+      "value": -52623.350512,
+      "unit": "MJ",
+      "calculation_date": "2026-01-25",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 14,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "A1-A3",
+      "value": 299206.151288,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-01-16",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 14,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "A4-A5",
+      "value": 64436.200085,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-01-16",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 14,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "B1-B7",
+      "value": 259428.781062,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-01-16",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 14,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "C1-C4",
+      "value": 89440.57778,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-01-16",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 14,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "D",
+      "value": -27692.378511,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-01-16",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 14,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "A1-A3",
+      "value": 0.022237,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-01-16",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 14,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "A4-A5",
+      "value": 0.006813,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-01-16",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 14,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "B1-B7",
+      "value": 0.016454,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-01-16",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 14,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "C1-C4",
+      "value": 0.006237,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-01-16",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 14,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "D",
+      "value": -0.001069,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-01-16",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 14,
+      "indicator_type": "AP",
+      "lifecycle_phase": "A1-A3",
+      "value": 904.181314,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-01-16",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 14,
+      "indicator_type": "AP",
+      "lifecycle_phase": "A4-A5",
+      "value": 201.729743,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-01-16",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 14,
+      "indicator_type": "AP",
+      "lifecycle_phase": "B1-B7",
+      "value": 783.730547,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-01-16",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 14,
+      "indicator_type": "AP",
+      "lifecycle_phase": "C1-C4",
+      "value": 254.377274,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-01-16",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 14,
+      "indicator_type": "AP",
+      "lifecycle_phase": "D",
+      "value": -82.142485,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-01-16",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 14,
+      "indicator_type": "EP",
+      "lifecycle_phase": "A1-A3",
+      "value": 100.078771,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-01-16",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 14,
+      "indicator_type": "EP",
+      "lifecycle_phase": "A4-A5",
+      "value": 16.686668,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-01-16",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 14,
+      "indicator_type": "EP",
+      "lifecycle_phase": "B1-B7",
+      "value": 49.716984,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-01-16",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 14,
+      "indicator_type": "EP",
+      "lifecycle_phase": "C1-C4",
+      "value": 21.013362,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-01-16",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 14,
+      "indicator_type": "EP",
+      "lifecycle_phase": "D",
+      "value": -5.89304,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-01-16",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 14,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "A1-A3",
+      "value": 2097914.302868,
+      "unit": "MJ",
+      "calculation_date": "2026-01-16",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 14,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "A4-A5",
+      "value": 645553.292512,
+      "unit": "MJ",
+      "calculation_date": "2026-01-16",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 14,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "B1-B7",
+      "value": 1553453.825659,
+      "unit": "MJ",
+      "calculation_date": "2026-01-16",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 14,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "C1-C4",
+      "value": 645215.726471,
+      "unit": "MJ",
+      "calculation_date": "2026-01-16",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 14,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "D",
+      "value": -83370.644124,
+      "unit": "MJ",
+      "calculation_date": "2026-01-16",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 14,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "A1-A3",
+      "value": 541205.536952,
+      "unit": "MJ",
+      "calculation_date": "2026-01-16",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 14,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "A4-A5",
+      "value": 130722.172822,
+      "unit": "MJ",
+      "calculation_date": "2026-01-16",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 14,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "B1-B7",
+      "value": 353685.04965,
+      "unit": "MJ",
+      "calculation_date": "2026-01-16",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 14,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "C1-C4",
+      "value": 158714.943216,
+      "unit": "MJ",
+      "calculation_date": "2026-01-16",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 14,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "D",
+      "value": -21863.13008,
+      "unit": "MJ",
+      "calculation_date": "2026-01-16",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 15,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "A1-A3",
+      "value": 1057277.801753,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-01-26",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 15,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "A4-A5",
+      "value": 294987.850468,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-01-26",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 15,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "B1-B7",
+      "value": 959299.612033,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-01-26",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 15,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "C1-C4",
+      "value": 340200.800714,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-01-26",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 15,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "D",
+      "value": -88842.888781,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-01-26",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 15,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "A1-A3",
+      "value": 0.090392,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-01-26",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 15,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "A4-A5",
+      "value": 0.023529,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-01-26",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 15,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "B1-B7",
+      "value": 0.059885,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-01-26",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 15,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "C1-C4",
+      "value": 0.027258,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-01-26",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 15,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "D",
+      "value": -0.004691,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-01-26",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 15,
+      "indicator_type": "AP",
+      "lifecycle_phase": "A1-A3",
+      "value": 2601.723546,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-01-26",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 15,
+      "indicator_type": "AP",
+      "lifecycle_phase": "A4-A5",
+      "value": 525.940717,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-01-26",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 15,
+      "indicator_type": "AP",
+      "lifecycle_phase": "B1-B7",
+      "value": 1453.001382,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-01-26",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 15,
+      "indicator_type": "AP",
+      "lifecycle_phase": "C1-C4",
+      "value": 491.224499,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-01-26",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 15,
+      "indicator_type": "AP",
+      "lifecycle_phase": "D",
+      "value": -114.119438,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-01-26",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 15,
+      "indicator_type": "EP",
+      "lifecycle_phase": "A1-A3",
+      "value": 396.69859,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-01-26",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 15,
+      "indicator_type": "EP",
+      "lifecycle_phase": "A4-A5",
+      "value": 79.144034,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-01-26",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 15,
+      "indicator_type": "EP",
+      "lifecycle_phase": "B1-B7",
+      "value": 229.614603,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-01-26",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 15,
+      "indicator_type": "EP",
+      "lifecycle_phase": "C1-C4",
+      "value": 131.82339,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-01-26",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 15,
+      "indicator_type": "EP",
+      "lifecycle_phase": "D",
+      "value": -33.408158,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-01-26",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 15,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "A1-A3",
+      "value": 11566063.425536,
+      "unit": "MJ",
+      "calculation_date": "2026-01-26",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 15,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "A4-A5",
+      "value": 2630630.361805,
+      "unit": "MJ",
+      "calculation_date": "2026-01-26",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 15,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "B1-B7",
+      "value": 6501431.295175,
+      "unit": "MJ",
+      "calculation_date": "2026-01-26",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 15,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "C1-C4",
+      "value": 3129616.399074,
+      "unit": "MJ",
+      "calculation_date": "2026-01-26",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 15,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "D",
+      "value": -433559.703679,
+      "unit": "MJ",
+      "calculation_date": "2026-01-26",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 15,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "A1-A3",
+      "value": 1020717.189327,
+      "unit": "MJ",
+      "calculation_date": "2026-01-26",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 15,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "A4-A5",
+      "value": 270368.08845,
+      "unit": "MJ",
+      "calculation_date": "2026-01-26",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 15,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "B1-B7",
+      "value": 697017.664059,
+      "unit": "MJ",
+      "calculation_date": "2026-01-26",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 15,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "C1-C4",
+      "value": 321178.006245,
+      "unit": "MJ",
+      "calculation_date": "2026-01-26",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 15,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "D",
+      "value": -78299.222147,
+      "unit": "MJ",
+      "calculation_date": "2026-01-26",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 16,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "A1-A3",
+      "value": 35676.059193,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-03-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 16,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "A4-A5",
+      "value": 7330.615952,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-03-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 16,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "B1-B7",
+      "value": 17857.989201,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-03-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 16,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "C1-C4",
+      "value": 7032.36864,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-03-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 16,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "D",
+      "value": -2065.603932,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-03-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 16,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "A1-A3",
+      "value": 0.002033,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-03-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 16,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "A4-A5",
+      "value": 0.000529,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-03-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 16,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "B1-B7",
+      "value": 0.001482,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-03-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 16,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "C1-C4",
+      "value": 0.000583,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-03-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 16,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "D",
+      "value": -0.00017,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-03-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 16,
+      "indicator_type": "AP",
+      "lifecycle_phase": "A1-A3",
+      "value": 51.413863,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-03-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 16,
+      "indicator_type": "AP",
+      "lifecycle_phase": "A4-A5",
+      "value": 10.735683,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-03-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 16,
+      "indicator_type": "AP",
+      "lifecycle_phase": "B1-B7",
+      "value": 37.782228,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-03-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 16,
+      "indicator_type": "AP",
+      "lifecycle_phase": "C1-C4",
+      "value": 14.030391,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-03-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 16,
+      "indicator_type": "AP",
+      "lifecycle_phase": "D",
+      "value": -2.051973,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-03-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 16,
+      "indicator_type": "EP",
+      "lifecycle_phase": "A1-A3",
+      "value": 9.471084,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-03-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 16,
+      "indicator_type": "EP",
+      "lifecycle_phase": "A4-A5",
+      "value": 1.625633,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-03-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 16,
+      "indicator_type": "EP",
+      "lifecycle_phase": "B1-B7",
+      "value": 5.590409,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-03-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 16,
+      "indicator_type": "EP",
+      "lifecycle_phase": "C1-C4",
+      "value": 2.148535,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-03-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 16,
+      "indicator_type": "EP",
+      "lifecycle_phase": "D",
+      "value": -0.392234,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-03-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 16,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "A1-A3",
+      "value": 204197.063784,
+      "unit": "MJ",
+      "calculation_date": "2026-03-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 16,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "A4-A5",
+      "value": 62085.843136,
+      "unit": "MJ",
+      "calculation_date": "2026-03-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 16,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "B1-B7",
+      "value": 147520.005481,
+      "unit": "MJ",
+      "calculation_date": "2026-03-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 16,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "C1-C4",
+      "value": 64554.682051,
+      "unit": "MJ",
+      "calculation_date": "2026-03-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 16,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "D",
+      "value": -18336.68192,
+      "unit": "MJ",
+      "calculation_date": "2026-03-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 16,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "A1-A3",
+      "value": 49097.790772,
+      "unit": "MJ",
+      "calculation_date": "2026-03-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 16,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "A4-A5",
+      "value": 8056.313594,
+      "unit": "MJ",
+      "calculation_date": "2026-03-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 16,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "B1-B7",
+      "value": 33379.96782,
+      "unit": "MJ",
+      "calculation_date": "2026-03-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 16,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "C1-C4",
+      "value": 9528.664858,
+      "unit": "MJ",
+      "calculation_date": "2026-03-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 16,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "D",
+      "value": -3346.389438,
+      "unit": "MJ",
+      "calculation_date": "2026-03-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 17,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "A1-A3",
+      "value": 885842.710819,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-04-29",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 17,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "A4-A5",
+      "value": 174673.223464,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-04-29",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 17,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "B1-B7",
+      "value": 625714.019063,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-04-29",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 17,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "C1-C4",
+      "value": 219501.20532,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-04-29",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 17,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "D",
+      "value": -63412.264475,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-04-29",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 17,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "A1-A3",
+      "value": 0.063676,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-04-29",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 17,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "A4-A5",
+      "value": 0.011585,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-04-29",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 17,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "B1-B7",
+      "value": 0.033419,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-04-29",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 17,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "C1-C4",
+      "value": 0.015784,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-04-29",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 17,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "D",
+      "value": -0.002882,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-04-29",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 17,
+      "indicator_type": "AP",
+      "lifecycle_phase": "A1-A3",
+      "value": 1244.07581,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-04-29",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 17,
+      "indicator_type": "AP",
+      "lifecycle_phase": "A4-A5",
+      "value": 254.747713,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-04-29",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 17,
+      "indicator_type": "AP",
+      "lifecycle_phase": "B1-B7",
+      "value": 811.050892,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-04-29",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 17,
+      "indicator_type": "AP",
+      "lifecycle_phase": "C1-C4",
+      "value": 272.153526,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-04-29",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 17,
+      "indicator_type": "AP",
+      "lifecycle_phase": "D",
+      "value": -54.021037,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-04-29",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 17,
+      "indicator_type": "EP",
+      "lifecycle_phase": "A1-A3",
+      "value": 332.177429,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-04-29",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 17,
+      "indicator_type": "EP",
+      "lifecycle_phase": "A4-A5",
+      "value": 67.605177,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-04-29",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 17,
+      "indicator_type": "EP",
+      "lifecycle_phase": "B1-B7",
+      "value": 194.443847,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-04-29",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 17,
+      "indicator_type": "EP",
+      "lifecycle_phase": "C1-C4",
+      "value": 76.401464,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-04-29",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 17,
+      "indicator_type": "EP",
+      "lifecycle_phase": "D",
+      "value": -25.591991,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-04-29",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 17,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "A1-A3",
+      "value": 8441819.247582,
+      "unit": "MJ",
+      "calculation_date": "2026-04-29",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 17,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "A4-A5",
+      "value": 2151703.995947,
+      "unit": "MJ",
+      "calculation_date": "2026-04-29",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 17,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "B1-B7",
+      "value": 6092181.212118,
+      "unit": "MJ",
+      "calculation_date": "2026-04-29",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 17,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "C1-C4",
+      "value": 2133337.652873,
+      "unit": "MJ",
+      "calculation_date": "2026-04-29",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 17,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "D",
+      "value": -370168.772931,
+      "unit": "MJ",
+      "calculation_date": "2026-04-29",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 17,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "A1-A3",
+      "value": 555125.111527,
+      "unit": "MJ",
+      "calculation_date": "2026-04-29",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 17,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "A4-A5",
+      "value": 170021.0412,
+      "unit": "MJ",
+      "calculation_date": "2026-04-29",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 17,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "B1-B7",
+      "value": 412296.964006,
+      "unit": "MJ",
+      "calculation_date": "2026-04-29",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 17,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "C1-C4",
+      "value": 191019.206367,
+      "unit": "MJ",
+      "calculation_date": "2026-04-29",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 17,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "D",
+      "value": -29635.794525,
+      "unit": "MJ",
+      "calculation_date": "2026-04-29",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 18,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "A1-A3",
+      "value": 203375.294508,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-05-05",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 18,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "A4-A5",
+      "value": 32464.149969,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-05-05",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 18,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "B1-B7",
+      "value": 103758.007428,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-05-05",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 18,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "C1-C4",
+      "value": 50403.482699,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-05-05",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 18,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "D",
+      "value": -11784.209734,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-05-05",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 18,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "A1-A3",
+      "value": 0.017156,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-05-05",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 18,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "A4-A5",
+      "value": 0.004017,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-05-05",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 18,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "B1-B7",
+      "value": 0.013021,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-05-05",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 18,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "C1-C4",
+      "value": 0.004741,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-05-05",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 18,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "D",
+      "value": -0.000769,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-05-05",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 18,
+      "indicator_type": "AP",
+      "lifecycle_phase": "A1-A3",
+      "value": 439.704507,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-05-05",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 18,
+      "indicator_type": "AP",
+      "lifecycle_phase": "A4-A5",
+      "value": 95.240861,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-05-05",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 18,
+      "indicator_type": "AP",
+      "lifecycle_phase": "B1-B7",
+      "value": 315.975759,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-05-05",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 18,
+      "indicator_type": "AP",
+      "lifecycle_phase": "C1-C4",
+      "value": 118.488428,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-05-05",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 18,
+      "indicator_type": "AP",
+      "lifecycle_phase": "D",
+      "value": -19.22817,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-05-05",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 18,
+      "indicator_type": "EP",
+      "lifecycle_phase": "A1-A3",
+      "value": 95.824158,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-05-05",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 18,
+      "indicator_type": "EP",
+      "lifecycle_phase": "A4-A5",
+      "value": 18.719997,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-05-05",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 18,
+      "indicator_type": "EP",
+      "lifecycle_phase": "B1-B7",
+      "value": 59.210349,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-05-05",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 18,
+      "indicator_type": "EP",
+      "lifecycle_phase": "C1-C4",
+      "value": 23.954414,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-05-05",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 18,
+      "indicator_type": "EP",
+      "lifecycle_phase": "D",
+      "value": -3.552341,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-05-05",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 18,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "A1-A3",
+      "value": 2962330.752218,
+      "unit": "MJ",
+      "calculation_date": "2026-05-05",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 18,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "A4-A5",
+      "value": 686573.164189,
+      "unit": "MJ",
+      "calculation_date": "2026-05-05",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 18,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "B1-B7",
+      "value": 1556163.160887,
+      "unit": "MJ",
+      "calculation_date": "2026-05-05",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 18,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "C1-C4",
+      "value": 759863.570722,
+      "unit": "MJ",
+      "calculation_date": "2026-05-05",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 18,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "D",
+      "value": -171483.788493,
+      "unit": "MJ",
+      "calculation_date": "2026-05-05",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 18,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "A1-A3",
+      "value": 345056.957127,
+      "unit": "MJ",
+      "calculation_date": "2026-05-05",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 18,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "A4-A5",
+      "value": 69083.017921,
+      "unit": "MJ",
+      "calculation_date": "2026-05-05",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 18,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "B1-B7",
+      "value": 200273.214108,
+      "unit": "MJ",
+      "calculation_date": "2026-05-05",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 18,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "C1-C4",
+      "value": 71610.262118,
+      "unit": "MJ",
+      "calculation_date": "2026-05-05",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 18,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "D",
+      "value": -20120.598164,
+      "unit": "MJ",
+      "calculation_date": "2026-05-05",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 19,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "A1-A3",
+      "value": 37819.49897,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-01-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 19,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "A4-A5",
+      "value": 12144.654585,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-01-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 19,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "B1-B7",
+      "value": 35294.640255,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-01-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 19,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "C1-C4",
+      "value": 13176.978048,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-01-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 19,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "D",
+      "value": -2212.501072,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-01-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 19,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "A1-A3",
+      "value": 0.003554,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-01-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 19,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "A4-A5",
+      "value": 0.000752,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-01-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 19,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "B1-B7",
+      "value": 0.001791,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-01-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 19,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "C1-C4",
+      "value": 0.000906,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-01-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 19,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "D",
+      "value": -0.000104,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-01-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 19,
+      "indicator_type": "AP",
+      "lifecycle_phase": "A1-A3",
+      "value": 82.565318,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-01-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 19,
+      "indicator_type": "AP",
+      "lifecycle_phase": "A4-A5",
+      "value": 23.057282,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-01-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 19,
+      "indicator_type": "AP",
+      "lifecycle_phase": "B1-B7",
+      "value": 62.189696,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-01-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 19,
+      "indicator_type": "AP",
+      "lifecycle_phase": "C1-C4",
+      "value": 26.617329,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-01-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 19,
+      "indicator_type": "AP",
+      "lifecycle_phase": "D",
+      "value": -3.769587,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-01-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 19,
+      "indicator_type": "EP",
+      "lifecycle_phase": "A1-A3",
+      "value": 13.88334,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-01-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 19,
+      "indicator_type": "EP",
+      "lifecycle_phase": "A4-A5",
+      "value": 2.745447,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-01-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 19,
+      "indicator_type": "EP",
+      "lifecycle_phase": "B1-B7",
+      "value": 9.732885,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-01-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 19,
+      "indicator_type": "EP",
+      "lifecycle_phase": "C1-C4",
+      "value": 4.494985,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-01-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 19,
+      "indicator_type": "EP",
+      "lifecycle_phase": "D",
+      "value": -0.603702,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-01-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 19,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "A1-A3",
+      "value": 650759.857668,
+      "unit": "MJ",
+      "calculation_date": "2026-01-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 19,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "A4-A5",
+      "value": 112295.987062,
+      "unit": "MJ",
+      "calculation_date": "2026-01-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 19,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "B1-B7",
+      "value": 420246.451461,
+      "unit": "MJ",
+      "calculation_date": "2026-01-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 19,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "C1-C4",
+      "value": 149825.178651,
+      "unit": "MJ",
+      "calculation_date": "2026-01-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 19,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "D",
+      "value": -33278.797394,
+      "unit": "MJ",
+      "calculation_date": "2026-01-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 19,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "A1-A3",
+      "value": 62075.994263,
+      "unit": "MJ",
+      "calculation_date": "2026-01-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 19,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "A4-A5",
+      "value": 14878.279674,
+      "unit": "MJ",
+      "calculation_date": "2026-01-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 19,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "B1-B7",
+      "value": 49211.859161,
+      "unit": "MJ",
+      "calculation_date": "2026-01-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 19,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "C1-C4",
+      "value": 15408.804343,
+      "unit": "MJ",
+      "calculation_date": "2026-01-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 19,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "D",
+      "value": -3118.994654,
+      "unit": "MJ",
+      "calculation_date": "2026-01-21",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 20,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "A1-A3",
+      "value": 476302.535078,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-05-12",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 20,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "A4-A5",
+      "value": 92987.302787,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-05-12",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 20,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "B1-B7",
+      "value": 229699.874828,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-05-12",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 20,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "C1-C4",
+      "value": 119412.061736,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-05-12",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 20,
+      "indicator_type": "GWP",
+      "lifecycle_phase": "D",
+      "value": -35121.185029,
+      "unit": "kg CO2 eq.",
+      "calculation_date": "2026-05-12",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 20,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "A1-A3",
+      "value": 0.024906,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-05-12",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 20,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "A4-A5",
+      "value": 0.004737,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-05-12",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 20,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "B1-B7",
+      "value": 0.017502,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-05-12",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 20,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "C1-C4",
+      "value": 0.006094,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-05-12",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 20,
+      "indicator_type": "ODP",
+      "lifecycle_phase": "D",
+      "value": -0.00141,
+      "unit": "kg CFC-11 eq.",
+      "calculation_date": "2026-05-12",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 20,
+      "indicator_type": "AP",
+      "lifecycle_phase": "A1-A3",
+      "value": 1303.843514,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-05-12",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 20,
+      "indicator_type": "AP",
+      "lifecycle_phase": "A4-A5",
+      "value": 270.887159,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-05-12",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 20,
+      "indicator_type": "AP",
+      "lifecycle_phase": "B1-B7",
+      "value": 1000.422139,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-05-12",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 20,
+      "indicator_type": "AP",
+      "lifecycle_phase": "C1-C4",
+      "value": 351.899855,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-05-12",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 20,
+      "indicator_type": "AP",
+      "lifecycle_phase": "D",
+      "value": -79.702511,
+      "unit": "kg SO2 eq.",
+      "calculation_date": "2026-05-12",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 20,
+      "indicator_type": "EP",
+      "lifecycle_phase": "A1-A3",
+      "value": 112.267051,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-05-12",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 20,
+      "indicator_type": "EP",
+      "lifecycle_phase": "A4-A5",
+      "value": 25.01108,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-05-12",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 20,
+      "indicator_type": "EP",
+      "lifecycle_phase": "B1-B7",
+      "value": 92.45917,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-05-12",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 20,
+      "indicator_type": "EP",
+      "lifecycle_phase": "C1-C4",
+      "value": 26.924419,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-05-12",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 20,
+      "indicator_type": "EP",
+      "lifecycle_phase": "D",
+      "value": -4.266932,
+      "unit": "kg PO4 eq.",
+      "calculation_date": "2026-05-12",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 20,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "A1-A3",
+      "value": 3709220.7691,
+      "unit": "MJ",
+      "calculation_date": "2026-05-12",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 20,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "A4-A5",
+      "value": 878229.237275,
+      "unit": "MJ",
+      "calculation_date": "2026-05-12",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 20,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "B1-B7",
+      "value": 2927407.87943,
+      "unit": "MJ",
+      "calculation_date": "2026-05-12",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 20,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "C1-C4",
+      "value": 933545.209197,
+      "unit": "MJ",
+      "calculation_date": "2026-05-12",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 20,
+      "indicator_type": "PENRT",
+      "lifecycle_phase": "D",
+      "value": -249334.288923,
+      "unit": "MJ",
+      "calculation_date": "2026-05-12",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 20,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "A1-A3",
+      "value": 766295.115931,
+      "unit": "MJ",
+      "calculation_date": "2026-05-12",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 20,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "A4-A5",
+      "value": 152931.793399,
+      "unit": "MJ",
+      "calculation_date": "2026-05-12",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 20,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "B1-B7",
+      "value": 427228.64451,
+      "unit": "MJ",
+      "calculation_date": "2026-05-12",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 20,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "C1-C4",
+      "value": 185245.905409,
+      "unit": "MJ",
+      "calculation_date": "2026-05-12",
+      "methodology": "EN 15978"
+    },
+    {
+      "building_id": 20,
+      "indicator_type": "PERT",
+      "lifecycle_phase": "D",
+      "value": -27298.606685,
+      "unit": "MJ",
+      "calculation_date": "2026-05-12",
+      "methodology": "EN 15978"
+    }
+  ]
+}

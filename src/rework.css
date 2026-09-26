@@ -90,3 +90,96 @@ h1,h2,h3,b,strong{font-family:"Microsoft YaHei UI","PingFang SC","Noto Sans CJK 
 @media(max-width:760px){.content{padding:25px 19px 110px}.twin-models>span{width:100%;margin:3px 0 0}.twin-rework .twin-head{align-items:flex-start}.twin-rework .twin-status{width:100%}.twin-rework .twin-viewer{min-height:540px}.twin-view-controls{left:13px;right:13px;bottom:13px;max-width:none;justify-content:flex-start}.twin-rework .twin-hint{display:none}.twin-emission-list{grid-template-columns:1fr}.twin-timeline{grid-template-columns:repeat(2,minmax(0,1fr))}.twin-build{padding:19px}.twin-build-header{align-items:flex-start}.twin-rework .twin-bottom{grid-template-columns:1fr}.formula-clear{grid-template-columns:1fr;gap:5px}.formula-clear strong{margin-top:8px}}
 @media(max-width:470px){.twin-rework .twin-status{display:none}.twin-models{display:grid;grid-template-columns:repeat(3,1fr)}.twin-models button{padding:8px 6px;justify-content:center;flex-direction:column;text-align:center;font-size:.78rem!important}.twin-models>span{grid-column:1/-1}.twin-rework .twin-viewer{min-height:510px}.twin-view-controls{top:13px;right:13px;bottom:auto;left:auto;max-width:158px;justify-content:flex-end}.twin-view-controls button{font-size:.73rem!important;padding:7px 9px}.twin-view-controls button:nth-child(3),.twin-view-controls button:nth-child(4){flex:0 0 auto}.twin-rework .twin-scan{display:none}.twin-build-header>button{padding:9px 11px}.twin-rework .twin-inspector{padding:20px}}
 @media(prefers-reduced-motion:reduce){.twin-models button,.twin-view-controls button,.twin-timeline button{transition:none}}
+.twin-legend{display:grid;gap:6px;margin:14px 0 0;padding:12px 14px;border:1px solid #dfece2;border-radius:11px;background:#f6fbf7}
+.twin-legend span{display:flex;align-items:center;gap:8px;color:#41654e;font-size:11px}
+.twin-legend i{width:10px;height:10px;flex:none;border-radius:50%;box-shadow:0 0 0 3px #7df2b822}
+.twin-stream-dot{display:inline-block;width:9px;height:9px;margin-right:6px;border-radius:50%;box-shadow:0 0 0 3px #ffffff14}
+.b6-facts{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:13px 0 0}
+.b6-facts>div{padding:11px 13px;border:1px solid #dfece2;border-radius:10px;background:#f6fbf7}
+.b6-facts small{display:block;color:#779380;font-size:10px}
+.b6-facts b{display:block;margin-top:4px;color:#20583a;font-size:13px}
+.b6-charts{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0 0}
+.b6-chart-panel{padding:18px 20px;border:1px solid #dcebe1;border-radius:16px;background:#ffffffe0}
+.b6-chart-panel header{display:flex;align-items:end;justify-content:space-between;gap:10px}
+.b6-chart-panel header small{color:#4d9b70;font-size:10px;font-weight:800;letter-spacing:.13em}
+.b6-chart-panel header h3{margin:4px 0 0;color:#214b36;font-size:15px}
+.b6-chart-panel header>span{color:#809788;font-size:11px;white-space:nowrap}
+.b6-chart-body{margin-top:8px}
+.b6-chart-empty{margin:16px 0 6px;color:#83988a;font-size:12px;text-align:center}
+.b6-chart-note{margin:8px 0 0;color:#8ba192;font-size:10px;line-height:1.5}
+@media(max-width:900px){.b6-charts{grid-template-columns:1fr}}
+/* —— CarbonIQ 品牌字标（图标 + Carbon/IQ 双色调 + 标语） —— */
+.ciq-lockup{display:inline-flex;align-items:center;gap:10px}
+.ciq-icon{width:64px;height:64px;flex:none;filter:drop-shadow(0 6px 16px #1a88583a);border-radius:14px}
+.ciq-word{font-weight:800;letter-spacing:-.035em;line-height:1;white-space:nowrap;font-family:Inter,"Segoe UI",system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+.ciq-word b{color:#132e22;font-weight:800}
+.ciq-word em{color:#1f9e5c;font-style:normal;font-weight:800}
+.ciq-tagline{margin:2px 0 0;color:#8aa094;font-size:14px;letter-spacing:.04em}
+.ciq-icon-sm{width:28px;height:28px;border-radius:7px;filter:drop-shadow(0 3px 8px #1a88582e)}
+.ciq-word-sm{font-size:19px}
+.ciq-icon-xs{width:22px;height:22px;border-radius:6px}
+.ciq-word-xs{font-size:16px}
+.ciq-lockup-hero{flex-direction:column;gap:14px;margin:0 auto 4px}
+.wh-hero .ciq-lockup-hero .ciq-icon{width:78px;height:78px;border-radius:18px}
+.wh-hero .ciq-lockup-hero .ciq-word{font-size:56px;letter-spacing:-.045em}
+.wh-hero .ciq-tagline{text-align:center}
+.wh-hero .ciq-lockup-hero+ .ciq-tagline+h1{margin-top:22px}
+.cw-brand .ciq-word-sm{font-size:18px}
+.cw-brand small{margin-left:2px}
+.ciq-lockup .ciq-word>b,.ciq-lockup .ciq-word>em{display:inline}
+.ciq-lockup .ciq-word.ciq-word-sm{font-size:19px}
+.cw-brand>span.ciq-word{width:auto;height:auto;display:inline-flex;background:none;box-shadow:none;border-radius:0;padding:0;letter-spacing:-.035em}
+/* 首页技能库入口按钮 */
+.wh-skill-entry{max-width:1060px;margin:16px auto 0}
+.wh-skill-entry button{display:flex;align-items:center;gap:14px;width:100%;padding:16px 20px;border:1px solid #dce9df;border-radius:16px;background:#ffffffd9;color:inherit;font:inherit;text-align:left;cursor:pointer;transition:border-color .2s,box-shadow .2s}
+.wh-skill-entry button:hover{border-color:#95ceb0;box-shadow:0 12px 26px #23543910}
+.wh-skill-entry button>svg:first-child{flex:none;display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:#e4f5e9;color:#19945e}
+.wh-skill-entry button b{display:block;font-size:15px;color:#214b36}
+.wh-skill-entry button small{display:block;margin-top:3px;color:#8aa094;font-size:11px}
+.wh-skill-entry button>svg:last-child{margin-left:auto;color:#4ca36d}
+/* ===== 全局按钮弹簧动效：按压缩小，松手 overshoot 回弹（单次，不晃），悬停微抬 ===== */
+button{transition:transform .42s cubic-bezier(.34,1.56,.64,1),box-shadow .28s ease}
+button:not(:disabled):hover{transform:translateY(-1px);box-shadow:0 5px 14px #1a885824}
+button:not(:disabled):active{transform:scale(.955) translateY(1px);transition-duration:.09s,0s,0s}
+/* 卡片型按钮保持自身悬停位移，但补上弹簧回弹 */
+.wh-card,.sk-card{transition:transform .42s cubic-bezier(.34,1.56,.64,1),box-shadow .28s ease,border-color .2s}
+.wh-card:not(:disabled):active,.sk-card:not(:disabled):active{transform:scale(.978);transition-duration:.09s,0s,0s}
+/* ===== 果冻开关（启动AI分析服务） ===== */
+.ciq-toggle{display:flex;align-items:flex-start;gap:11px;cursor:pointer;user-select:none;position:relative}
+.ciq-toggle input{position:absolute;opacity:0;width:1px;height:1px;pointer-events:none}
+.ciq-toggle input:focus-visible+.ciq-switch{outline:2px solid #66bf85;outline-offset:2px}
+.ciq-switch{flex:none;position:relative;width:46px;height:25px;border-radius:999px;background:#c9dcd0;transform-origin:center;margin-top:1px}
+.ciq-toggle.on .ciq-switch{background:#238457}
+.ciq-knob{position:absolute;top:3px;left:3px;width:19px;height:19px;border-radius:999px;background:#fff;box-shadow:0 2px 6px #143c2933}
+.ciq-toggle.on .ciq-knob{animation:ciq-knob-on .5s cubic-bezier(.34,1.56,.64,1) forwards}
+.ciq-toggle:not(.on) .ciq-knob{animation:ciq-knob-off .5s cubic-bezier(.34,1.56,.64,1) forwards}
+.ciq-toggle.on .ciq-switch{animation:ciq-track-on .5s ease}
+.ciq-toggle:not(.on) .ciq-switch{animation:ciq-track-off .5s ease}
+@keyframes ciq-knob-on{0%{transform:translateX(0) scale(1)}40%{transform:translateX(25px) scale(1.28,.72)}70%{transform:translateX(20px) scale(.92,1.08)}100%{transform:translateX(21px) scale(1)}}
+@keyframes ciq-knob-off{0%{transform:translateX(21px) scale(1)}40%{transform:translateX(-4px) scale(1.28,.72)}70%{transform:translateX(1px) scale(.92,1.08)}100%{transform:translateX(0) scale(1)}}
+@keyframes ciq-track-on{0%{transform:scale(1,1)}40%{transform:scale(1.06,.86)}75%{transform:scale(.97,1.05)}100%{transform:scale(1,1)}}
+@keyframes ciq-track-off{0%{transform:scale(1,1)}40%{transform:scale(1.06,.86)}75%{transform:scale(.97,1.05)}100%{transform:scale(1,1)}}
+.ciq-toggle-text{color:#637e6b;font-size:11px;line-height:1.7}
+.ciq-toggle-text b{color:#25744a;font-size:12px;margin-right:7px}
+.ciq-toggle.disabled{opacity:.55;cursor:not-allowed}
+@media(prefers-reduced-motion:reduce){.ciq-knob,.ciq-switch{animation:none!important}.ciq-toggle.on .ciq-knob{transform:translateX(21px)}.ciq-toggle:not(.on) .ciq-knob{transform:translateX(0)}button,button:not(:disabled):hover,button:not(:disabled):active{transition:none;transform:none}}
+/* ===== 惯性滑块 ===== */
+.ciq-slider{position:relative;height:22px;cursor:pointer;touch-action:none;user-select:none;outline:none;min-width:200px}
+.ciq-slider::before{content:"";position:absolute;top:8px;left:0;right:0;height:6px;border-radius:999px;background:#dbe9de}
+.ciq-slider .ciq-slider-fill{position:absolute;top:8px;left:0;height:6px;border-radius:999px;background:#2d9464;pointer-events:none}
+.ciq-slider .ciq-slider-knob{position:absolute;top:3px;width:16px;height:16px;border-radius:50%;background:#fff;border:2px solid #2d9464;box-shadow:0 2px 6px #143c2933;transform:translateX(-50%);pointer-events:none;transition:width .2s,height .2s,top .2s}
+.ciq-slider:hover .ciq-slider-knob{width:18px;height:18px;top:2px}
+.ciq-slider:focus-visible{outline:2px solid #66bf85;outline-offset:3px;border-radius:999px}
+.ciq-slider.disabled{opacity:.5;cursor:not-allowed}
+/* 高优先级版本：覆盖组件级 transition，让弹簧回弹全局生效（排除卡片自身悬停位移） */
+button:not(#springfix){transition:transform .42s cubic-bezier(.34,1.56,.64,1),box-shadow .28s ease,border-color .2s ease,background-color .2s ease,color .2s ease}
+button:not(#springfix):not(.wh-card):not(.sk-card):not(:disabled):hover{transform:translateY(-1px);box-shadow:0 5px 14px #1a885824}
+button:not(#springfix):not(.wh-card):not(.sk-card):not(:disabled):active{transform:scale(.955) translateY(1px);transition-duration:.09s,0s,0s,0s,0s}
+.wh-page .wh-card,.sk-library .sk-card{transition:transform .42s cubic-bezier(.34,1.56,.64,1),box-shadow .28s ease,border-color .2s}
+.wh-page .wh-card:not(:disabled):active,.sk-library .sk-card:not(:disabled):active{transform:scale(.978);transition-duration:.09s,0s,0s}
+/* ===== 页面过渡：锚定展开/收缩覆盖层 ===== */
+.wh-phase-overlay{position:fixed;inset:0;z-index:80;overflow-y:auto;background:#f7fbf9;will-change:transform,opacity}
+.setup-overlay{position:fixed;inset:0;z-index:90;overflow-y:auto;background:#f7fbf9;will-change:transform,opacity}
+.setup-overlay .agent-setup{min-height:100vh}
+.setup-close{position:fixed;top:18px;right:18px;z-index:5;display:grid;place-items:center;width:38px;height:38px;border:1px solid #d8e8dc;border-radius:10px;background:#fff;color:#41705a;cursor:pointer}
+.setup-close:hover{border-color:#8ec9a3;box-shadow:0 5px 14px #1a885824}

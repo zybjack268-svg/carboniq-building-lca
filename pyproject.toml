@@ -1,0 +1,29 @@
+[project]
+name = "building-lca"
+version = "0.1.0"
+description = "Statinio gyvavimo ciklo vertinimo sistema — open-source building lifecycle assessment (LCA) environmental impact modelling"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [
+    { name = "Predictive Labs", email = "info@predictivelabs.co.uk" },
+]
+dependencies = [
+    "python-fasthtml>=0.12.0",
+    "psycopg2-binary>=2.9",
+    "pandas>=2.0",
+    "plotly>=5.18",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.4",
+    "pytest>=8.0",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.format]
+quote-style = "double"

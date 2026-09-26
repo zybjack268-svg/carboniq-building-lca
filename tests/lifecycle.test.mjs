@@ -1,6 +1,16 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { calculateOperation, calculateTransport } from '../src/lifecycle.js';
+import { calculateOperation, calculateTransport, calculateSite } from '../src/lifecycle.js';
+
+test('A5 excludes quantities whose unit conflicts with the emission factor', () => {
+  const row = { activity: '柴油施工', energy: '柴油', quantity: '10', unit: 'L', factor: '3', factorUnit: 'kgCO₂e/kg', source: '测试' };
+  const mismatched = calculateSite([row]);
+  assert.equal(mismatched.kg, 0);
+  assert.equal(mismatched.incomplete, 1);
+  const matched = calculateSite([{ ...row, unit: 'kg' }]);
+  assert.equal(matched.kg, 30);
+  assert.equal(matched.incomplete, 0);
+});
 
 test('A4 uses only complete route rows and tonne-kilometres', () => {
   const result = calculateTransport([
@@ -27,4 +37,15 @@ test('B6 electricity and gas retain separate factors before summing', () => {
   assert.equal(result.gasKg, 20);
   assert.equal(result.annualKg, 70);
   assert.equal(result.horizonKg, 140);
+});
+
+test('B6 purchased district heat counts as a third energy and never as zero', () => {
+  const heatOnly = calculateOperation({ annualElectricity: '', electricityFactor: '', annualGas: '', gasFactor: '', annualHeat: '500', heatFactor: '110', years: '' });
+  assert.equal(heatOnly.heatKg, 55000);
+  assert.equal(heatOnly.annualKg, 55000);
+  // 有购热量但没填热力因子 → 不当作零排放
+  const incomplete = calculateOperation({ annualElectricity: '100', electricityFactor: '0.5', annualHeat: '500', heatFactor: '', years: '1' });
+  assert.equal(incomplete.heatKg, null);
+  assert.equal(incomplete.heatIncomplete, true);
+  assert.equal(incomplete.annualKg, 50);
 });

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { ArrowUpRight, Leaf } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import "./portal.css";
 
 const OPEN_DURATION = 2050;
@@ -166,7 +166,7 @@ export default function PortalLanding({ enter }) {
       <div ref={rightRef} className="portal-door portal-door--right"><div className="portal-door-face"><span className="portal-index">02 / LIFE CYCLE</span><span className="portal-door-word">碳<span>迹</span></span><span className="portal-door-foot">施工 · 运营</span></div></div>
     </div>
     <EdgeParticles phase={phase} leftRef={leftRef} rightRef={rightRef} />
-    <div className="portal-top"><div className="portal-brand"><i><Leaf size={18} /></i><span>CARBON <b>IQ</b></span></div><span className="portal-top-caption">建筑碳排放分析平台</span></div>
+    <div className="portal-top"><div className="portal-brand ciq-lockup"><img src="/carboniq-icon.svg" alt="" className="ciq-icon ciq-icon-xs"/><span className="ciq-word ciq-word-sm"><b>Carbon</b><em>IQ</em></span></div><span className="portal-top-caption">建筑碳排放分析平台</span></div>
     <div className="portal-center">
       <div className="portal-center-line" />
       <button className="portal-knob" type="button" onClick={open} disabled={phase !== "ready"} aria-label={phase === "ready" ? "按下旋钮，进入建筑碳排放分析平台" : "入口加载中"}>

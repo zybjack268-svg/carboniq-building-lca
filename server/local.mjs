@@ -101,7 +101,7 @@ const server = createServer(async (req, res) => {
       if (pathname.startsWith("/api/")) return json(res, 401, { error: "请先输入访问码。" });
       res.writeHead(302, { Location: "/login", "Cache-Control": "no-store" }); return res.end();
     }
-    if (pathname === "/api/session" && req.method === "GET") return json(res, 200, { serverManaged: true, model: config.model });
+    if (pathname === "/api/session" && req.method === "GET") return json(res, 200, { serverManaged: true, ...(process.env.CARBONIQ_DESKTOP === "1" ? { desktop: true } : {}), model: config.model });
     if (pathname === "/api/chat/completions" && req.method === "POST") {
       if (!/application\/json/i.test(req.headers["content-type"] || "")) return json(res, 415, { error: "仅支持 JSON 请求。" });
       let payload;

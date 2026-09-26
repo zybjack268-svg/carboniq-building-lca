@@ -1,0 +1,27 @@
+.fl-backdrop{position:fixed;inset:0;z-index:120;display:flex;align-items:center;justify-content:center;padding:20px;background:#12291ce0;backdrop-filter:blur(3px)}
+.fl-dialog{display:flex;flex-direction:column;width:min(660px,100%);max-height:min(760px,92vh);border:1px solid #d7e8dc;border-radius:20px;background:#fbfefb;box-shadow:0 30px 70px #0c241640;overflow:hidden;color:#21402f}
+.fl-dialog *{box-sizing:border-box}
+.fl-head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;padding:20px 22px 12px}
+.fl-head small{font-size:10px;font-weight:800;letter-spacing:.16em;color:#4d9b70}
+.fl-head h2{margin:4px 0 0;font-size:19px;color:#1f4c34}
+.fl-head p{margin:7px 0 0;color:#6d8a76;font-size:11.5px;line-height:1.6}
+.fl-close{flex:none;display:grid;place-items:center;width:32px;height:32px;border:1px solid #dcebe0;border-radius:9px;background:#fff;color:#41705a}
+.fl-search{display:flex;align-items:center;gap:8px;margin:0 22px 12px;padding:10px 13px;border:1px solid #dcebe0;border-radius:10px;background:#fff;color:#5d8470}
+.fl-search input{flex:1;border:0;outline:0;background:transparent;color:#224a36;font:inherit;font-size:13px}
+.fl-search input::placeholder{color:#a3b6a8}
+.fl-list{flex:1;min-height:120px;overflow:auto;padding:2px 16px 10px;display:grid;gap:9px;align-content:start;grid-auto-rows:max-content}
+.fl-item{display:flex;align-items:center;justify-content:space-between;gap:18px;width:100%;padding:13px 15px;border:1px solid #e2eee4;border-radius:13px;background:#fff;text-align:left;color:#2d543d;font:inherit;cursor:pointer;overflow:visible}
+.fl-item:hover{border-color:#5fb98a;background:#f2faf4;box-shadow:0 4px 14px #1a885818}
+.fl-item-main{display:grid;gap:4px;min-width:0;flex:1}
+.fl-item-name{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:800;color:#1f4c34}
+.fl-item-name em{font-style:normal;font-size:10px;font-weight:700;color:#3f7d5d;background:#e3f3ea;border-radius:999px;padding:2px 9px}
+.fl-item-source{font-size:10.5px;color:#7c9583;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.fl-item-note{font-size:10.5px;color:#94764a;background:#fffbf2;border-radius:6px;padding:4px 9px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.fl-item-value{flex:none;display:grid;justify-items:end;gap:1px}
+.fl-item-value b{font-size:17px;color:#17694a;font-variant-numeric:tabular-nums}
+.fl-item-value small{font-size:9.5px;color:#81998d}
+.fl-empty{margin:18px 6px;color:#83988a;font-size:12px;text-align:center}
+.fl-foot{display:flex;align-items:center;gap:6px;margin:0;padding:10px 22px 14px;border-top:1px solid #e7f0e8;color:#8ba192;font-size:10px;line-height:1.5}
+/* 旧设计系统的 button 全局 overflow:hidden 会把网格行压扁，这里显式还原 */
+.fl-backdrop .fl-item{overflow:visible}
+@media(max-width:520px){.fl-head,.fl-search,.fl-foot{padding-left:14px;padding-right:14px}.fl-head{padding-top:16px}}

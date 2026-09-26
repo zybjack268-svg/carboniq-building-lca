@@ -31,6 +31,7 @@ const columns = {
   quantity: ["估算数量", "数量", "工程量"],
   factor: ["碳因子", "单位碳因子", "碳排放因子"],
   source: ["因子来源", "来源", "数据来源"],
+  cost: ["成本单价", "单价", "成本（元）", "综合单价", "价格", "成本", "预算单价", "预算价"],
 };
 
 function columnMap(headers) {
@@ -44,6 +45,14 @@ function positiveNumber(value, label, rowNumber) {
   const result = Number(normalized);
   if (!Number.isFinite(result) || result <= 0) throw new Error(`第 ${rowNumber} 行的${label}必须大于 0`);
   return result;
+}
+
+// 成本是可选字段：缺列或留空记为 ""，只影响成本结论，不阻断排放核算。
+function parseOptionalCost(value) {
+  const text = String(value ?? "").trim().replace(/,/g, "").replace(/[¥￥元]/g, "");
+  if (!text) return "";
+  const parsed = Number(text);
+  return Number.isFinite(parsed) && parsed >= 0 ? parsed : "";
 }
 
 export function parseMaterialRows(rows) {
@@ -61,6 +70,8 @@ export function parseMaterialRows(rows) {
     if (row.every((cell) => String(cell ?? "").trim() === "")) return;
     const name = String(row[index.name] ?? "").trim();
     if (/^(合计|总计|小计)$/.test(name)) return;
+    // 说明行（如模板里的填写指引）不是材料，跳过且不报错。
+    if (/^说明[：:]/.test(name)) return;
     const rowNumber = headerIndex + offset + 2;
     if (!name) throw new Error(`第 ${rowNumber} 行缺少材料名称`);
     const unit = String(row[index.unit] ?? "").trim();
@@ -74,6 +85,7 @@ export function parseMaterialRows(rows) {
       quantity: positiveNumber(row[index.quantity], "数量", rowNumber),
       factor: positiveNumber(row[index.factor], "碳因子", rowNumber),
       source: index.source >= 0 ? String(row[index.source] ?? "").trim() || "未提供来源" : "未提供来源",
+      cost: index.cost >= 0 ? parseOptionalCost(row[index.cost]) : "",
     });
   });
   if (!parsed.length) throw new Error("清单中没有可核算的材料行");
@@ -92,5 +104,14 @@ export function computeMaterialScenario(rows, candidates, selectedCandidates) {
     const candidate = candidates.find((item) => item.id === selectedCandidates[row.id] && item.materialId === row.id);
     return sum + (candidate ? row.quantity * (row.factor - candidate.factor) : 0);
   }, 0);
-  return { reduction, total: baseline - reduction, rate: baseline ? reduction / baseline : 0 };
+  // 成本变化：已选候选中任一行缺成本单价时为 null，避免给出看似完整的成本结论。
+  const knownCost = (value) => value !== "" && value !== null && value !== undefined && Number.isFinite(Number(value)) && Number(value) >= 0;
+  let costKnown = true;
+  const costDelta = rows.reduce((sum, row) => {
+    const candidate = candidates.find((item) => item.id === selectedCandidates[row.id] && item.materialId === row.id);
+    if (!candidate) return sum;
+    if (!knownCost(row.cost) || !knownCost(candidate.cost)) { costKnown = false; return sum; }
+    return sum + row.quantity * (Number(candidate.cost) - Number(row.cost));
+  }, 0);
+  return { reduction, total: baseline - reduction, rate: baseline ? reduction / baseline : 0, costDelta: costKnown ? costDelta : null };
 }

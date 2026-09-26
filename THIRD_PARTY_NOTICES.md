@@ -11,14 +11,11 @@ This repository is a derivative work of:
 
 The original MIT license is retained in `THIRD_PARTY_LICENSES/BUILDING_LCA_MIT.txt`.
 
-## aora-bot Emotion Ball
+## Libraries.dev bot-avatars
 
-- Source: https://github.com/sam70361/aora-bot
-- Revision: e3b6148c818da4a8e1966f2bc89cdb3cee473b73
-- Included files: `public/vendor/aora/`
-- License and notice: `public/vendor/aora/LICENSE`, `public/vendor/aora/NOTICE.md`
-
-The original ball character and code are used for this noncommercial learning prototype with attribution. The upstream license does not grant commercial use of the ball appearance. A commercial release requires replacing the character or obtaining the appropriate rights.
+- Source: https://github.com/Jakubantalik/Libraries.dev/tree/main/packages/bot-avatars
+- Usage: `BotAvatar` flower character in the A1–A3 workflow
+- License: MIT (distributed as the `bot-avatars` npm dependency)
 
 ## EMBODIED-CC
 

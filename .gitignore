@@ -7,6 +7,7 @@ __pycache__/
 .openai/hosting.json
 *.egg-info/
 dist/
+release/
 build/
 .ruff_cache/
 .pytest_cache/

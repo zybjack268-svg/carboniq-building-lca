@@ -4,7 +4,7 @@ CarbonIQ 是一个可在个人电脑上运行的建筑 LCA 学习项目。用户
 
 ## 下载 Windows 安装包
 
-Windows x64 用户可从 [v0.2.1 发布页](https://github.com/zybjack268-svg/carboniq-building-lca/releases/tag/v0.2.1)下载 `CarbonIQ-Setup-0.2.1-x64.exe` 并安装。安装版不需要另行安装 Node.js。首次启动时，在模型配置窗口填写 OpenAI 兼容接口的 Base URL、模型 ID 和 API Key；之后可从桌面应用的“CarbonIQ → 模型配置”菜单更换。配置保存在本机应用数据目录，不包含在安装包中。安装包未做代码签名，Windows 可能显示发布者未知提示。
+Windows x64 用户可从 [v0.2.2 发布页](https://github.com/zybjack268-svg/carboniq-building-lca/releases/tag/v0.2.2)下载 `CarbonIQ-Setup-0.2.2-x64.exe` 并安装。安装后可通过桌面的 CarbonIQ 快捷方式打开，安装版不需要另行安装 Node.js。首次启动时，在模型配置窗口填写 OpenAI 兼容接口的 Base URL、模型 ID 和 API Key；之后可从桌面应用的“CarbonIQ → 模型配置”菜单更换。配置保存在本机应用数据目录，不包含在安装包中。安装包未做代码签名，Windows 可能显示发布者未知提示。
 
 ## 从源码运行或打包
 
@@ -38,7 +38,7 @@ npm run local
 
 ## 使用范围和第三方权利
 
-**允许非商业竞赛使用。**本项目新增的网页、智能体和工作流内容采用 [CarbonIQ 非商业使用许可](LICENSE)：允许下载、查看、安装和运行未经修改的版本，也允许将生成的分析结果用于非商业竞赛。使用者应自行核实数据、结论及竞赛规则。未经另行书面授权，仍不得修改、二次开发或商用这些新增内容；本许可不是开源许可证。
+本项目新增的网页、智能体和工作流内容采用 [CarbonIQ 非商业使用许可](LICENSE)：允许下载、查看、安装和运行未经修改的版本，并将生成的分析结果用于非商业用途。使用者应自行核实数据、结论及适用规则。未经另行书面授权，不得修改、二次开发或商用这些新增内容；本许可不是开源许可证。
 
 本仓库含有独立许可的第三方内容，以上说明不改变其原有授权。Building LCA 上游部分及 Libraries.dev 的 bot-avatars 组件采用 MIT 许可，来源见 [第三方声明](THIRD_PARTY_NOTICES.md)。上游 MIT 许可允许相应上游代码被商业使用，不能由本项目新增内容的使用范围追溯限制。
 

@@ -24,10 +24,11 @@ Section "CarbonIQ" SEC_MAIN
   File /r "${SOURCE_DIR}\*"
   CreateDirectory "$SMPROGRAMS\CarbonIQ"
   CreateShortCut "$SMPROGRAMS\CarbonIQ\CarbonIQ.lnk" "$INSTDIR\CarbonIQ.exe"
+  CreateShortCut "$DESKTOP\CarbonIQ.lnk" "$INSTDIR\CarbonIQ.exe"
   CreateShortCut "$SMPROGRAMS\CarbonIQ\卸载 CarbonIQ.lnk" "$INSTDIR\Uninstall CarbonIQ.exe"
   WriteUninstaller "$INSTDIR\Uninstall CarbonIQ.exe"
   WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\CarbonIQ" "DisplayName" "CarbonIQ"
-  WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\CarbonIQ" "DisplayVersion" "0.2.1"
+  WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\CarbonIQ" "DisplayVersion" "0.2.2"
   WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\CarbonIQ" "Publisher" "CarbonIQ"
   WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\CarbonIQ" "UninstallString" '"$INSTDIR\Uninstall CarbonIQ.exe"'
   WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\CarbonIQ" "DisplayIcon" "$INSTDIR\CarbonIQ.exe"
@@ -35,6 +36,7 @@ SectionEnd
 
 Section "Uninstall"
   Delete "$SMPROGRAMS\CarbonIQ\CarbonIQ.lnk"
+  Delete "$DESKTOP\CarbonIQ.lnk"
   Delete "$SMPROGRAMS\CarbonIQ\卸载 CarbonIQ.lnk"
   RMDir "$SMPROGRAMS\CarbonIQ"
   DeleteRegKey HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\CarbonIQ"

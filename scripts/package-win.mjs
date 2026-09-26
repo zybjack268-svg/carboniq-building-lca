@@ -26,7 +26,7 @@ const cacheRoot = process.env.LOCALAPPDATA && path.join(process.env.LOCALAPPDATA
 const cachedNsis = cacheRoot && path.join(cacheRoot, 'Bin', 'makensis.exe');
 const makensis = process.env.CARBONIQ_MAKENSIS || (cachedNsis && existsSync(cachedNsis) ? cachedNsis : 'makensis.exe');
 const source = path.join(root, 'release', 'win-unpacked');
-const output = path.join(root, 'release', 'CarbonIQ-Setup-0.2.1-x64.exe');
+const output = path.join(root, 'release', 'CarbonIQ-Setup-0.2.2-x64.exe');
 await run(makensis, [`/DSOURCE_DIR=${source}`, `/DOUTPUT_FILE=${output}`, path.join(root, 'installer', 'CarbonIQ.nsi')], {
   env: { ...process.env, ...(cacheRoot && makensis === cachedNsis ? { NSISDIR: cacheRoot } : {}) },
 });

@@ -1,7 +1,7 @@
 {
   "name": "dormitory-lca-agent",
   "private": true,
-  "version": "0.2.2",
+  "version": "0.2.3",
   "type": "module",
   "main": "desktop/main.cjs",
   "engines": {
@@ -42,10 +42,12 @@
     "files": ["main.cjs", "preload.cjs", "setup.html", "package.json"],
     "extraResources": [
       { "from": "server/local.mjs", "to": "server/local.mjs" },
-      { "from": "dist", "to": "dist" }
+      { "from": "dist", "to": "dist" },
+      { "from": "desktop/carboniq.ico", "to": "carboniq.ico" }
     ],
     "asar": true,
     "win": {
+      "icon": "desktop/carboniq.ico",
       "target": [
         {
           "target": "nsis",

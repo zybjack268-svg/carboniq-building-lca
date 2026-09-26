@@ -6,6 +6,7 @@ const net = require('node:net');
 const path = require('node:path');
 
 const appId = 'com.carboniq.desktop';
+const iconPath = app.isPackaged ? path.join(process.resourcesPath, 'carboniq.ico') : path.join(__dirname, 'carboniq.ico');
 let mainWindow;
 let setupWindow;
 let serverProcess;
@@ -68,7 +69,7 @@ async function openMain(config) {
   if (!mainWindow || mainWindow.isDestroyed()) {
     mainWindow = new BrowserWindow({
       width: 1320, height: 860, minWidth: 900, minHeight: 650,
-      title: 'CarbonIQ', show: false,
+      title: 'CarbonIQ', icon: iconPath, show: false,
       webPreferences: { contextIsolation: true, nodeIntegration: false, sandbox: true },
     });
     mainWindow.webContents.setWindowOpenHandler(() => ({ action: 'deny' }));
@@ -90,7 +91,7 @@ async function openMain(config) {
 function openSetup() {
   if (setupWindow && !setupWindow.isDestroyed()) { setupWindow.focus(); return; }
   setupWindow = new BrowserWindow({
-    width: 560, height: 590, resizable: false, title: 'CarbonIQ · 模型配置',
+    width: 560, height: 590, resizable: false, title: 'CarbonIQ · 模型配置', icon: iconPath,
     webPreferences: { preload: path.join(__dirname, 'preload.cjs'), contextIsolation: true, nodeIntegration: false, sandbox: true },
   });
   setupWindow.webContents.setWindowOpenHandler(() => ({ action: 'deny' }));

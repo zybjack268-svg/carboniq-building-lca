@@ -4,7 +4,7 @@ CarbonIQ 是一个可在个人电脑上运行的建筑 LCA 学习项目。用户
 
 ## 下载 Windows 安装包
 
-Windows x64 用户可从 [v0.2.3 发布页](https://github.com/zybjack268-svg/carboniq-building-lca/releases/tag/v0.2.3)下载 `CarbonIQ-Setup-0.2.3-x64.exe` 并安装。安装后可通过桌面的 CarbonIQ 快捷方式打开，安装版不需要另行安装 Node.js。首次启动时，在模型配置窗口填写 OpenAI 兼容接口的 Base URL、模型 ID 和 API Key；之后可从桌面应用的“CarbonIQ → 模型配置”菜单更换。配置保存在本机应用数据目录，不包含在安装包中。安装包未做代码签名，Windows 可能显示发布者未知提示。
+Windows x64 用户可从 [v0.2.4 发布页](https://github.com/zybjack268-svg/carboniq-building-lca/releases/tag/v0.2.4) 下载 `CarbonIQ-Setup-0.2.4-x64.exe`。安装后通过桌面 CarbonIQ 快捷方式打开，首次启动直接进入首页，本地核算可立即使用。需要 AI 分析时，在工作台点击“连接模型”或使用“CarbonIQ → 模型配置”菜单，填写 OpenAI 兼容接口的 Base URL、模型 ID 和 API Key。连接测试成功后配置才会保存在本机；可以继续添加多个模型并在设置窗口切换。升级时已有单模型配置会保留。API Key 不包含在安装包中。安装包未做代码签名，Windows 可能显示发布者未知提示。
 
 ## 从源码运行或打包
 

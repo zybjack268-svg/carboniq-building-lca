@@ -122,9 +122,9 @@ function App() {
     fetch("/api/session", { credentials: "same-origin", cache: "no-store" })
       .then((response) => response.ok ? response.json() : null)
       .then((session) => {
-        if (!active || !session?.serverManaged || !session.model) return;
+        if (!active || !session?.serverManaged) return;
         setAiConfig({ baseUrl: "/api", apiKey: "", model: session.model, serverManaged: true, desktop: Boolean(session.desktop) });
-        setAiConnection({ status: "ready", message: "本机模型配置已加载；可在设置中测试连接。" });
+        setAiConnection(session.model ? { status: "ready", message: "本机模型配置已加载；可在设置中测试连接。" } : { status: "idle", message: "尚未连接模型，本地核算功能可直接使用。" });
       })
       .catch(() => {});
     return () => { active = false; };
@@ -316,7 +316,10 @@ function App() {
   // 模型设置：从触发按钮展开为覆盖层，完成或关闭时向按钮收缩还原
   const setupAnchor = useRef(null);
   const setupWrapRef = useRef(null);
-  const openSetup = (event) => { setupAnchor.current = captureAnchor(event); setScreen("setup"); };
+  const openSetup = (event) => {
+    if (window.carboniqDesktop?.openSetup) { window.carboniqDesktop.openSetup(); return; }
+    setupAnchor.current = captureAnchor(event); setScreen("setup");
+  };
   useLayoutEffect(() => {
     if (screen === "setup" && setupWrapRef.current && setupAnchor.current) animateExpand(setupWrapRef.current, setupAnchor.current);
   }, [screen]);
@@ -332,7 +335,7 @@ function App() {
   return <>
     <WorkflowHub {...shared} openSetup={openSetup}/>
     {screen === "setup" && setupAnchor.current && <div className="setup-overlay anchored" ref={setupWrapRef}>
-      <button type="button" className="setup-close" onClick={beginSetupExit} aria-label="关闭模型设置"><X size={18}/></button>
+      <button type="button" className="setup-close" onClick={beginSetupExit} aria-label="返回首页"><X size={20}/> 返回首页</button>
       <ModelSetup config={aiConfig} update={updateAIConfig} connection={aiConnection} busy={aiBusy} test={testAI} enter={beginSetupExit}/>
     </div>}
   </>;

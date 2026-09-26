@@ -17,6 +17,27 @@ if (!app.requestSingleInstanceLock()) app.quit();
 app.on('second-instance', () => mainWindow?.focus() || setupWindow?.focus());
 
 function configPath() { return process.env.CARBONIQ_DESKTOP_CONFIG_PATH || path.join(app.getPath('userData'), 'config.json'); }
+function normalizeConfig(value = {}) {
+  const profiles = Array.isArray(value.profiles) ? value.profiles : value.baseUrl && value.model && value.apiKey
+    ? [{ id: randomBytes(8).toString('hex'), baseUrl: value.baseUrl, model: value.model, apiKey: value.apiKey }] : [];
+  return {
+    profiles,
+    activeProfileId: profiles.some((item) => item.id === value.activeProfileId) ? value.activeProfileId : profiles[0]?.id || null,
+    accessCode: value.accessCode || randomBytes(18).toString('base64url'),
+    cookieSecret: value.cookieSecret || randomBytes(32).toString('base64url'),
+  };
+}
+async function readConfig() {
+  const previous = await readFile(configPath(), 'utf8').then(JSON.parse).catch((error) => { if (error.code === 'ENOENT') return null; throw error; });
+  return normalizeConfig(previous || {});
+}
+async function saveConfig(config) {
+  await mkdir(path.dirname(configPath()), { recursive: true });
+  await writeFile(configPath(), JSON.stringify(config, null, 2), { mode: 0o600 });
+}
+function publicProfiles(config) {
+  return { activeProfileId: config.activeProfileId, profiles: config.profiles.map(({ id, baseUrl, model }) => ({ id, baseUrl, model })) };
+}
 
 function validateBaseUrl(input) {
   const url = new URL(String(input || '').trim());
@@ -70,7 +91,7 @@ async function openMain(config) {
     mainWindow = new BrowserWindow({
       width: 1320, height: 860, minWidth: 900, minHeight: 650,
       title: 'CarbonIQ', icon: iconPath, show: false,
-      webPreferences: { contextIsolation: true, nodeIntegration: false, sandbox: true },
+      webPreferences: { preload: path.join(__dirname, 'preload.cjs'), contextIsolation: true, nodeIntegration: false, sandbox: true },
     });
     mainWindow.webContents.setWindowOpenHandler(() => ({ action: 'deny' }));
     mainWindow.webContents.on('will-navigate', (event, url) => { if (!url.startsWith(`http://127.0.0.1:${serverPort}/`)) event.preventDefault(); });
@@ -83,9 +104,8 @@ async function openMain(config) {
     url: address, name: 'carboniq_session', value: `v1.${expires}.${signature}`,
     httpOnly: true, sameSite: 'strict', expirationDate: Number(expires) / 1000,
   });
-  await mainWindow.loadURL(`${address}/`);
+  await mainWindow.loadURL(`${address}/?intro=1`);
   mainWindow.show();
-  setupWindow?.close();
 }
 
 function openSetup() {
@@ -95,26 +115,48 @@ function openSetup() {
     webPreferences: { preload: path.join(__dirname, 'preload.cjs'), contextIsolation: true, nodeIntegration: false, sandbox: true },
   });
   setupWindow.webContents.setWindowOpenHandler(() => ({ action: 'deny' }));
-  setupWindow.loadFile(path.join(__dirname, 'setup.html'));
+  setupWindow.setMinimumSize(580, 620);
+  setupWindow.setSize(680, 760);
+  setupWindow.loadFile(path.join(__dirname, 'profiles.html'));
   setupWindow.on('closed', () => { setupWindow = null; });
 }
 
-ipcMain.handle('desktop:save-config', async (_event, input) => {
+ipcMain.handle('desktop:open-setup', () => { openSetup(); return { ok: true }; });
+ipcMain.handle('desktop:list-profiles', async () => publicProfiles(await readConfig()));
+ipcMain.handle('desktop:test-and-save', async (_event, input) => {
   try {
     const baseUrl = validateBaseUrl(input?.baseUrl);
     const model = String(input?.model || '').trim();
     const apiKey = String(input?.apiKey || '').trim();
     if (!model || !apiKey) throw new Error('模型 ID 和 API Key 不能为空。');
-    const old = await readFile(configPath(), 'utf8').then(JSON.parse).catch(() => null);
-    const config = {
-      baseUrl, model, apiKey,
-      accessCode: old?.accessCode || randomBytes(18).toString('base64url'),
-      cookieSecret: old?.cookieSecret || randomBytes(32).toString('base64url'),
-    };
-    await mkdir(path.dirname(configPath()), { recursive: true });
-    await writeFile(configPath(), JSON.stringify(config, null, 2), { mode: 0o600 });
+    const url = new URL(baseUrl);
+    const base = url.pathname.replace(/\/+$/, '');
+    url.pathname = base.endsWith('/chat/completions') ? base : `${base || '/v1'}/chat/completions`;
+    const response = await fetch(url, {
+      method: 'POST', headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}` },
+      body: JSON.stringify({ model, messages: [{ role: 'user', content: '请回复 OK' }], max_tokens: 16, stream: false }),
+      signal: AbortSignal.timeout(20000), redirect: 'error',
+    });
+    if (!response.ok) throw new Error(`连接测试失败，服务返回 HTTP ${response.status}。`);
+    const payload = await response.json();
+    if (!Array.isArray(payload.choices) || !payload.choices.length) throw new Error('连接测试失败，服务未返回有效模型响应。');
+    const config = await readConfig();
+    const id = randomBytes(8).toString('hex');
+    config.profiles.push({ id, baseUrl, model, apiKey });
+    config.activeProfileId = id;
+    await saveConfig(config);
     await openMain(config);
-    return { ok: true };
+    return { ok: true, ...publicProfiles(config) };
+  } catch (error) { return { ok: false, message: error.message }; }
+});
+ipcMain.handle('desktop:select-profile', async (_event, id) => {
+  try {
+    const config = await readConfig();
+    if (!config.profiles.some((item) => item.id === id)) throw new Error('未找到该模型配置。');
+    config.activeProfileId = id;
+    await saveConfig(config);
+    await openMain(config);
+    return { ok: true, ...publicProfiles(config) };
   } catch (error) { return { ok: false, message: error.message }; }
 });
 
@@ -126,9 +168,7 @@ app.whenReady().then(async () => {
       { role: 'quit', label: '退出' },
     ] },
   ]));
-  const config = await readFile(configPath(), 'utf8').then(JSON.parse).catch(() => null);
-  if (!config) return openSetup();
-  try { await openMain(config); }
+  try { const config = await readConfig(); await saveConfig(config); await openMain(config); }
   catch (error) { dialog.showErrorBox('CarbonIQ 启动失败', error.message); openSetup(); }
 });
 app.on('window-all-closed', () => app.quit());

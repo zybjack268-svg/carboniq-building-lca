@@ -65,3 +65,48 @@ test("local site gates pages and proxy; cookie survives restart without exposing
     await rm(folder, { recursive: true, force: true });
   }
 });
+
+test("desktop starts without a model and loads the selected saved profile", async () => {
+  const folder = await mkdtemp(path.join(tmpdir(), "carboniq-desktop-"));
+  const configPath = path.join(folder, "config.json");
+  const port = await freePort();
+  const endpoint = `http://127.0.0.1:${port}`;
+  const base = { profiles: [], activeProfileId: null, accessCode: "desktop-test-code", cookieSecret: "desktop-test-secret" };
+  const upstream = createServer((req, res) => {
+    assert.equal(req.headers.authorization, "Bearer second-key");
+    res.writeHead(200, { "Content-Type": "application/json" });
+    res.end(JSON.stringify({ choices: [{ message: { content: "second-model" } }] }));
+  });
+  upstream.listen(0, "127.0.0.1");
+  await once(upstream, "listening");
+  let child;
+  const launch = async () => {
+    child = spawn(process.execPath, ["server/local.mjs"], { cwd: path.resolve("."), env: { ...process.env, CARBONIQ_DESKTOP: "1", CARBONIQ_CONFIG_PATH: configPath, PORT: String(port) }, stdio: ["ignore", "pipe", "pipe"] });
+    for (let i = 0; i < 50; i += 1) {
+      try { await fetch(`${endpoint}/login`); return; } catch { await new Promise((resolve) => setTimeout(resolve, 50)); }
+    }
+    throw new Error("desktop server failed to start");
+  };
+  try {
+    await writeFile(configPath, JSON.stringify(base));
+    await launch();
+    const login = await fetch(`${endpoint}/login`, { method: "POST", body: new URLSearchParams({ code: base.accessCode }), redirect: "manual" });
+    const cookie = login.headers.get("set-cookie");
+    assert.deepEqual(await (await fetch(`${endpoint}/api/session`, { headers: { Cookie: cookie } })).json(), { serverManaged: true, desktop: true, model: "" });
+    const missing = await fetch(`${endpoint}/api/chat/completions`, { method: "POST", headers: { Cookie: cookie, "Content-Type": "application/json" }, body: JSON.stringify({ messages: [] }) });
+    assert.equal(missing.status, 409);
+    child.kill(); await once(child, "exit");
+    base.profiles = [
+      { id: "one", baseUrl: `http://127.0.0.1:${upstream.address().port}/v1`, model: "first-model", apiKey: "first-key" },
+      { id: "two", baseUrl: `http://127.0.0.1:${upstream.address().port}/v1`, model: "second-model", apiKey: "second-key" },
+    ];
+    base.activeProfileId = "two";
+    await writeFile(configPath, JSON.stringify(base));
+    await launch();
+    assert.deepEqual(await (await fetch(`${endpoint}/api/session`, { headers: { Cookie: cookie } })).json(), { serverManaged: true, desktop: true, model: "second-model" });
+    const answer = await fetch(`${endpoint}/api/chat/completions`, { method: "POST", headers: { Cookie: cookie, "Content-Type": "application/json" }, body: JSON.stringify({ messages: [{ role: "user", content: "hi" }] }) });
+    assert.equal((await answer.json()).choices[0].message.content, "second-model");
+  } finally {
+    child?.kill(); upstream.close(); await rm(folder, { recursive: true, force: true });
+  }
+});

@@ -1,7 +1,7 @@
 {
   "name": "dormitory-lca-agent",
   "private": true,
-  "version": "0.2.3",
+  "version": "0.2.4",
   "type": "module",
   "main": "desktop/main.cjs",
   "engines": {
@@ -39,7 +39,7 @@
       "app": "desktop",
       "output": "release"
     },
-    "files": ["main.cjs", "preload.cjs", "setup.html", "package.json"],
+    "files": ["main.cjs", "preload.cjs", "profiles.html", "package.json"],
     "extraResources": [
       { "from": "server/local.mjs", "to": "server/local.mjs" },
       { "from": "dist", "to": "dist" },

@@ -181,5 +181,5 @@ button:not(#springfix):not(.wh-card):not(.sk-card):not(:disabled):active{transfo
 .wh-phase-overlay{position:fixed;inset:0;z-index:80;overflow-y:auto;background:#f7fbf9;will-change:transform,opacity}
 .setup-overlay{position:fixed;inset:0;z-index:90;overflow-y:auto;background:#f7fbf9;will-change:transform,opacity}
 .setup-overlay .agent-setup{min-height:100vh}
-.setup-close{position:fixed;top:18px;right:18px;z-index:5;display:grid;place-items:center;width:38px;height:38px;border:1px solid #d8e8dc;border-radius:10px;background:#fff;color:#41705a;cursor:pointer}
+.setup-close{position:fixed;top:18px;left:18px;right:auto;z-index:5;display:flex;align-items:center;justify-content:center;gap:8px;min-width:122px;min-height:46px;padding:10px 14px;border:2px solid #83b79a;border-radius:11px;background:#fff;color:#145b38;font-weight:800;box-shadow:0 8px 24px #102f2840;cursor:pointer}
 .setup-close:hover{border-color:#8ec9a3;box-shadow:0 5px 14px #1a885824}

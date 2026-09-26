@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CarbonIQ · 模型设置</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;background:#eef7f1;color:#173b30;font:15px/1.55 system-ui,"Microsoft YaHei",sans-serif}
+    header{position:sticky;top:0;z-index:2;display:flex;align-items:center;gap:16px;padding:18px 28px;background:#fff;border-bottom:1px solid #d7e9dd}
+    .back{flex:none;min-width:128px;padding:10px 15px;border:1px solid #83b79a;border-radius:10px;background:#e6f6eb;color:#145b38;font-weight:750;text-align:center}
+    h1{font-size:22px;margin:0}main{max-width:620px;margin:24px auto 42px;padding:0 18px}section{background:#fff;border:1px solid #dce9df;border-radius:18px;padding:22px;margin-bottom:18px;box-shadow:0 8px 28px #1745320d}
+    h2{font-size:19px;margin:0 0 8px}p{color:#60796b;font-size:13px;margin:0 0 15px}label{display:block;margin:14px 0 0;font-weight:650}
+    input{display:block;width:100%;margin-top:6px;padding:11px 12px;border:1px solid #aac8b9;border-radius:9px;font:inherit}
+    button{font:inherit;cursor:pointer}button:disabled{opacity:.55;cursor:not-allowed}.primary{width:100%;margin-top:20px;padding:12px;border:0;border-radius:10px;background:#14885e;color:#fff;font-weight:750}
+    .profile{display:flex;align-items:center;justify-content:space-between;gap:12px;border:1px solid #dce9df;border-radius:11px;padding:12px;margin-top:10px}
+    .profile.active{border-color:#53b582;background:#effaf2}.profile strong,.profile small{display:block;overflow-wrap:anywhere}.profile small{color:#698578;font-size:11px}.profile button{flex:none;padding:8px 11px;border:1px solid #92c4a3;border-radius:8px;background:#fff;color:#146c43;font-weight:700}
+    #message{min-height:22px;color:#276d4a;margin-top:12px}#message.error{color:#b23a3a}
+  </style>
+</head>
+<body>
+  <header><button class="back" id="back" type="button">← 返回首页</button><h1>模型设置</h1></header>
+  <main>
+    <section><h2>已保存的模型</h2><p>测试连接成功的模型会保存在这台电脑上。点击“切换”即可设为当前模型。</p><div id="profiles"></div></section>
+    <section><h2>添加模型</h2><p>填写 OpenAI 兼容接口信息。连接测试成功后才会保存并启用。</p>
+      <form id="form">
+        <label>Base URL<input name="baseUrl" type="url" placeholder="https://example.com/v1" required autocomplete="off"></label>
+        <label>模型 ID<input name="model" required autocomplete="off"></label>
+        <label>API Key<input name="apiKey" type="password" required autocomplete="off"></label>
+        <button class="primary" type="submit">测试连接并保存</button>
+      </form><div id="message" role="status"></div>
+      <p>API Key 仅保存在本机应用数据目录，不会打包进安装文件。远程接口必须使用 HTTPS。</p>
+    </section>
+  </main>
+  <script>
+    const list = document.getElementById('profiles');
+    const message = document.getElementById('message');
+    const form = document.getElementById('form');
+    function showMessage(value, error = false) { message.textContent = value; message.classList.toggle('error', error); }
+    async function refresh() {
+      const state = await window.carboniqDesktop.listProfiles();
+      list.replaceChildren();
+      if (!state.profiles.length) { const empty = document.createElement('p'); empty.textContent = '尚未连接模型。您可以先返回首页使用本地核算功能。'; list.append(empty); }
+      for (const profile of state.profiles) {
+        const row = document.createElement('div'); row.className = 'profile' + (profile.id === state.activeProfileId ? ' active' : '');
+        const info = document.createElement('div'); const title = document.createElement('strong'); title.textContent = profile.model;
+        const detail = document.createElement('small'); detail.textContent = profile.baseUrl; info.append(title, detail); row.append(info);
+        const button = document.createElement('button'); button.type = 'button'; button.textContent = profile.id === state.activeProfileId ? '当前使用' : '切换使用'; button.disabled = profile.id === state.activeProfileId;
+        button.addEventListener('click', async () => { button.disabled = true; showMessage('正在切换模型…'); const result = await window.carboniqDesktop.selectProfile(profile.id); if (!result.ok) showMessage(result.message, true); else showMessage('已切换到 ' + profile.model); await refresh(); });
+        row.append(button); list.append(row);
+      }
+    }
+    document.getElementById('back').addEventListener('click', () => window.close());
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault(); const button = form.querySelector('button'); button.disabled = true; showMessage('正在测试模型连接…');
+      const result = await window.carboniqDesktop.testAndSave(Object.fromEntries(new FormData(form)));
+      if (result.ok) { form.reset(); showMessage('连接成功，模型已保存并启用。'); await refresh(); }
+      else showMessage(result.message, true);
+      button.disabled = false;
+    });
+    refresh().catch((error) => showMessage(error.message, true));
+  </script>
+</body>
+</html>

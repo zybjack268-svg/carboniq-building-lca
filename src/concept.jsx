@@ -130,6 +130,11 @@ function App() {
     return () => { active = false; };
   }, []);
 
+  useEffect(() => window.carboniqDesktop?.onProfileChanged?.(({ model }) => {
+    setAiConfig({ baseUrl: "/api", apiKey: "", model, serverManaged: true, desktop: true });
+    setAiConnection({ status: "ready", message: "已切换到当前模型。" });
+  }), []);
+
   const stats = useMemo(() => {
     const rows = materials.map((m) => ({ ...m, emission: number(m.quantity) * number(m.factor) }));
     const total = rows.reduce((sum, m) => sum + m.emission, 0);

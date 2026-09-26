@@ -1,6 +1,6 @@
 {
   "name": "carboniq-desktop",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "CarbonIQ building life-cycle carbon analysis desktop app",
   "author": "CarbonIQ",
   "main": "main.cjs"

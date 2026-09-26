@@ -72,10 +72,11 @@ test("desktop starts without a model and loads the selected saved profile", asyn
   const port = await freePort();
   const endpoint = `http://127.0.0.1:${port}`;
   const base = { profiles: [], activeProfileId: null, accessCode: "desktop-test-code", cookieSecret: "desktop-test-secret" };
+  let expectedModel = "second-model";
   const upstream = createServer((req, res) => {
-    assert.equal(req.headers.authorization, "Bearer second-key");
+    assert.equal(req.headers.authorization, `Bearer ${expectedModel === "second-model" ? "second-key" : "first-key"}`);
     res.writeHead(200, { "Content-Type": "application/json" });
-    res.end(JSON.stringify({ choices: [{ message: { content: "second-model" } }] }));
+    res.end(JSON.stringify({ choices: [{ message: { content: expectedModel } }] }));
   });
   upstream.listen(0, "127.0.0.1");
   await once(upstream, "listening");
@@ -106,6 +107,12 @@ test("desktop starts without a model and loads the selected saved profile", asyn
     assert.deepEqual(await (await fetch(`${endpoint}/api/session`, { headers: { Cookie: cookie } })).json(), { serverManaged: true, desktop: true, model: "second-model" });
     const answer = await fetch(`${endpoint}/api/chat/completions`, { method: "POST", headers: { Cookie: cookie, "Content-Type": "application/json" }, body: JSON.stringify({ messages: [{ role: "user", content: "hi" }] }) });
     assert.equal((await answer.json()).choices[0].message.content, "second-model");
+    expectedModel = "first-model";
+    base.activeProfileId = "one";
+    await writeFile(configPath, JSON.stringify(base));
+    assert.deepEqual(await (await fetch(`${endpoint}/api/session`, { headers: { Cookie: cookie } })).json(), { serverManaged: true, desktop: true, model: "first-model" });
+    const switched = await fetch(`${endpoint}/api/chat/completions`, { method: "POST", headers: { Cookie: cookie, "Content-Type": "application/json" }, body: JSON.stringify({ messages: [{ role: "user", content: "hi again" }] }) });
+    assert.equal((await switched.json()).choices[0].message.content, "first-model");
   } finally {
     child?.kill(); upstream.close(); await rm(folder, { recursive: true, force: true });
   }

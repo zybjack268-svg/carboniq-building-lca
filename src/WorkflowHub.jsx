@@ -42,7 +42,7 @@ const rowFields = {
 };
 const format = new Intl.NumberFormat("zh-CN", { maximumFractionDigits: 6 });
 
-function PhaseWorkflow({ phase, aiConfig, onBack, openSetup, rows, setRows, result, climate, setClimate, analysis, setAnalysis, project, setProject, stats }) {
+function PhaseWorkflow({ phase, aiConfig, onBack, openSetup, rows, setRows, result, climate, setClimate, analysis, setAnalysis, project, setProject, stats, isReference }) {
   const fileRef = useRef(null);
   const [fileName, setFileName] = useState("");
   const [notice, setNotice] = useState("");
@@ -131,7 +131,7 @@ function PhaseWorkflow({ phase, aiConfig, onBack, openSetup, rows, setRows, resu
           : <>{rows.map((row, index) => <div className="wh-row" key={row.id}><div className="wh-row-title"><b>记录 {index + 1}</b><button onClick={() => setRows((current) => current.filter((item) => item.id !== row.id))} aria-label={`删除记录 ${index + 1}`}><Trash2 size={15}/></button></div><div className="wh-fields">{rowFields[phase.id].map(([field, label, type]) => fieldInput(field, label, type, row))}</div>{phase.id === "a5" && row.unit && row.factorUnit && !siteUnitCompatible(row.unit, row.factorUnit) && <p className="wh-warning" role="status">用量单位与因子单位不匹配；本条不会计入排放小计。请换算后再核算。</p>}</div>)}<button className="wh-add" onClick={addRow}><Plus size={16}/> 添加{phase.id === "a4" ? "路线" : "活动"}</button></>}
       </section>
       {phase.id === "a4" && <A4Visuals routes={rows} result={result} aiConfig={aiConfig}/>}
-      {phase.id === "b6" && <section className="wh-panel wh-construction-model" aria-label="B6 运营能耗三维示意"><div className="wh-panel-head"><div><small>02 · OPERATION MODEL</small><h2>运营能耗数字孪生</h2></div><strong>{hasData ? `${format.format(amount / 1000)} tCO₂e/年` : "待输入"}</strong></div><p className="wh-help">夜景建筑能流示意：金色为电力、蓝色为燃气、橙色为市政热力；粒子密度按各能源年度排放占比。下方附排放构成与情景年限图表。</p><Suspense fallback={<div className="cw-generating">正在加载运营能耗三维示意…</div>}><OperationTwin project={project} climate={climate} operationResult={result}/></Suspense></section>}
+      {phase.id === "b6" && <section className="wh-panel wh-construction-model" aria-label="B6 运营能耗三维示意"><div className="wh-panel-head"><div><small>02 · OPERATION MODEL</small><h2>运营能耗数字孪生</h2></div><strong>{hasData ? `${format.format(amount / 1000)} tCO₂e/年` : "待输入"}</strong></div><p className="wh-help">夜景建筑能流示意：金色为电力、蓝色为燃气、橙色为市政热力；粒子密度按各能源年度排放占比。下方附排放构成与情景年限图表。</p><Suspense fallback={<div className="cw-generating">正在加载运营能耗三维示意…</div>}><OperationTwin project={project} climate={climate} operationResult={result} areaKnown={!isReference}/></Suspense></section>}
       <section className="wh-panel wh-result"><div className="wh-panel-head"><div><small>{phase.id === "a4" ? "03" : "02"} · 本地核算与模型解释</small><h2>{phase.code} 阶段结果</h2></div><strong>{hasData ? `${format.format(amount / 1000)} tCO₂e${isEnergy ? "/年" : ""}` : "待输入"}</strong></div>
         <p>{isEnergy ? "仅计算已录入的年度电力、燃气与外购热力；不得与一次性建设阶段直接相加。" : `仅合计 ${result.rows.length} 条完整记录${incomplete ? `；${incomplete} 条尚未补齐` : ""}，不能代表阶段全部排放。`}</p>
         <textarea value={question} onChange={(event) => setQuestion(event.target.value)} placeholder={`可补充希望智能体重点分析的 ${phase.code} 问题…`}/>
@@ -217,7 +217,7 @@ export default function WorkflowHub(props) {
       {active && <div className="wh-phase-overlay" ref={overlayRef}>
         {active === "a1"
           ? <AgentWorkbench {...props} onBack={closePhase} openSetup={props.openSetup}/>
-          : <PhaseWorkflow key={active} phase={phases.find((item) => item.id === active)} aiConfig={props.aiConfig} onBack={closePhase} openSetup={props.openSetup} rows={active === "a4" ? props.routes : props.siteRows} setRows={active === "a4" ? props.setRoutes : props.setSiteRows} result={active === "a4" ? props.transportResult : active === "a5" ? props.siteResult : props.operationResult} climate={props.climate} setClimate={props.setClimate} analysis={workflowAnalyses[active]} setAnalysis={(next) => setWorkflowAnalyses((current) => ({ ...current, [active]: next }))} project={props.project} setProject={props.setProject} stats={props.stats}/>}
+          : <PhaseWorkflow key={active} phase={phases.find((item) => item.id === active)} aiConfig={props.aiConfig} onBack={closePhase} openSetup={props.openSetup} rows={active === "a4" ? props.routes : props.siteRows} setRows={active === "a4" ? props.setRoutes : props.setSiteRows} result={active === "a4" ? props.transportResult : active === "a5" ? props.siteResult : props.operationResult} climate={props.climate} setClimate={props.setClimate} analysis={workflowAnalyses[active]} setAnalysis={(next) => setWorkflowAnalyses((current) => ({ ...current, [active]: next }))} project={props.project} setProject={props.setProject} stats={props.stats} isReference={props.isReference}/>}
       </div>}
       <footer className="wh-footer"><CheckCircle2 size={15}/> 智能体解释数据与建议；排放数值由本地计算并保留可核对的输入。</footer>
     </main></div>;

@@ -1,9 +1,11 @@
 const { app, BrowserWindow, ipcMain, dialog, Menu } = require('electron');
 const { createHmac, randomBytes } = require('node:crypto');
-const { readFile, mkdir, writeFile } = require('node:fs/promises');
+const { readFile, mkdir, writeFile, rename } = require('node:fs/promises');
 const { spawn } = require('node:child_process');
 const net = require('node:net');
 const path = require('node:path');
+const { findLegacyProjectPort } = require('./storagePort.cjs');
+const { testModelConnection } = require('./modelConnection.cjs');
 
 const appId = 'com.carboniq.desktop';
 const iconPath = app.isPackaged ? path.join(process.resourcesPath, 'carboniq.ico') : path.join(__dirname, 'carboniq.ico');
@@ -23,6 +25,7 @@ function normalizeConfig(value = {}) {
   return {
     profiles,
     activeProfileId: profiles.some((item) => item.id === value.activeProfileId) ? value.activeProfileId : profiles[0]?.id || null,
+    localPort: Number.isInteger(value.localPort) && value.localPort >= 1024 && value.localPort <= 65535 ? value.localPort : null,
     accessCode: value.accessCode || randomBytes(18).toString('base64url'),
     cookieSecret: value.cookieSecret || randomBytes(32).toString('base64url'),
   };
@@ -33,7 +36,9 @@ async function readConfig() {
 }
 async function saveConfig(config) {
   await mkdir(path.dirname(configPath()), { recursive: true });
-  await writeFile(configPath(), JSON.stringify(config, null, 2), { mode: 0o600 });
+  const pending = `${configPath()}.${process.pid}.tmp`;
+  await writeFile(pending, JSON.stringify(config, null, 2), { mode: 0o600 });
+  await rename(pending, configPath());
 }
 function publicProfiles(config) {
   return { activeProfileId: config.activeProfileId, profiles: config.profiles.map(({ id, baseUrl, model }) => ({ id, baseUrl, model })) };
@@ -55,6 +60,14 @@ async function freePort() {
   return port;
 }
 
+async function portAvailable(port) {
+  const probe = net.createServer();
+  return new Promise((resolve) => {
+    probe.once('error', () => resolve(false));
+    probe.listen(port, '127.0.0.1', () => probe.close(() => resolve(true)));
+  });
+}
+
 async function stopServer() {
   if (!serverProcess) return;
   const child = serverProcess;
@@ -65,7 +78,12 @@ async function stopServer() {
 
 async function startServer(config) {
   await stopServer();
-  serverPort = await freePort();
+  if (!config.localPort) {
+    config.localPort = await findLegacyProjectPort(app.getPath('userData')) || await freePort();
+    await saveConfig(config);
+  }
+  serverPort = config.localPort;
+  if (!(await portAvailable(serverPort))) throw new Error(`本地端口 ${serverPort} 已被占用，请关闭占用该端口的程序后重试。`);
   const script = app.isPackaged
     ? path.join(process.resourcesPath, 'server', 'local.mjs')
     : path.join(__dirname, '..', 'server', 'local.mjs');
@@ -129,23 +147,13 @@ ipcMain.handle('desktop:test-and-save', async (_event, input) => {
     const model = String(input?.model || '').trim();
     const apiKey = String(input?.apiKey || '').trim();
     if (!model || !apiKey) throw new Error('模型 ID 和 API Key 不能为空。');
-    const url = new URL(baseUrl);
-    const base = url.pathname.replace(/\/+$/, '');
-    url.pathname = base.endsWith('/chat/completions') ? base : `${base || '/v1'}/chat/completions`;
-    const response = await fetch(url, {
-      method: 'POST', headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}` },
-      body: JSON.stringify({ model, messages: [{ role: 'user', content: '请回复 OK' }], max_tokens: 16, stream: false }),
-      signal: AbortSignal.timeout(20000), redirect: 'error',
-    });
-    if (!response.ok) throw new Error(`连接测试失败，服务返回 HTTP ${response.status}。`);
-    const payload = await response.json();
-    if (!Array.isArray(payload.choices) || !payload.choices.length) throw new Error('连接测试失败，服务未返回有效模型响应。');
+    await testModelConnection({ baseUrl, model, apiKey });
     const config = await readConfig();
     const id = randomBytes(8).toString('hex');
     config.profiles.push({ id, baseUrl, model, apiKey });
     config.activeProfileId = id;
     await saveConfig(config);
-    await openMain(config);
+    mainWindow?.webContents.send('desktop:profile-changed', { model });
     return { ok: true, ...publicProfiles(config) };
   } catch (error) { return { ok: false, message: error.message }; }
 });
@@ -155,7 +163,7 @@ ipcMain.handle('desktop:select-profile', async (_event, id) => {
     if (!config.profiles.some((item) => item.id === id)) throw new Error('未找到该模型配置。');
     config.activeProfileId = id;
     await saveConfig(config);
-    await openMain(config);
+    mainWindow?.webContents.send('desktop:profile-changed', { model: config.profiles.find((item) => item.id === id).model });
     return { ok: true, ...publicProfiles(config) };
   } catch (error) { return { ok: false, message: error.message }; }
 });

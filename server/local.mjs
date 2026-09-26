@@ -56,10 +56,8 @@ function activeModel() {
 }
 if (!process.env.CARBONIQ_DESKTOP && !activeModel()) throw new Error("本机配置缺少模型，请检查 .local/config.json。");
 if (activeModel()) chatEndpoint(activeModel().baseUrl);
-if (process.env.CARBONIQ_DESKTOP === "1") {
-  import("node:fs").then(({ watch }) => watch(configFile, async () => {
-    try { config = JSON.parse(await readFile(configFile, "utf8")); } catch { /* Atomic update in progress. */ }
-  })).catch(() => {});
+async function refreshDesktopConfig() {
+  if (process.env.CARBONIQ_DESKTOP === "1") config = JSON.parse(await readFile(configFile, "utf8"));
 }
 if (!(await stat(path.join(dist, "index.html")).catch(() => null))) throw new Error("未找到 dist/index.html，请先运行 npm run build。");
 
@@ -111,12 +109,16 @@ const server = createServer(async (req, res) => {
       if (pathname.startsWith("/api/")) return json(res, 401, { error: "请先输入访问码。" });
       res.writeHead(302, { Location: "/login", "Cache-Control": "no-store" }); return res.end();
     }
-    if (pathname === "/api/session" && req.method === "GET") return json(res, 200, { serverManaged: true, ...(process.env.CARBONIQ_DESKTOP === "1" ? { desktop: true } : {}), model: activeModel()?.model || "" });
+    if (pathname === "/api/session" && req.method === "GET") {
+      await refreshDesktopConfig();
+      return json(res, 200, { serverManaged: true, ...(process.env.CARBONIQ_DESKTOP === "1" ? { desktop: true } : {}), model: activeModel()?.model || "" });
+    }
     if (pathname === "/api/chat/completions" && req.method === "POST") {
       if (!/application\/json/i.test(req.headers["content-type"] || "")) return json(res, 415, { error: "仅支持 JSON 请求。" });
       let payload;
       try { payload = JSON.parse(await body(req)); } catch { return json(res, 400, { error: "JSON 请求无效。" }); }
       if (!payload || !Array.isArray(payload.messages)) return json(res, 400, { error: "缺少 messages。" });
+      await refreshDesktopConfig();
       const selected = activeModel();
       if (!selected) return json(res, 409, { error: "请先在模型设置中连接模型。" });
       payload.model = selected.model; payload.stream = false;

@@ -17,7 +17,7 @@ const STREAMS = [
   { key: "heat", label: "市政热力", color: 0xff8a50, css: "#ff8a50", size: 1 },
 ];
 
-export default function OperationTwin({ project, climate, operationResult }) {
+export default function OperationTwin({ project, climate, operationResult, areaKnown = false }) {
   const geometry = deriveBuildingGeometry(project);
   const floorCount = geometry.floors;
   const floorHeight = geometry.floorHeight;
@@ -42,7 +42,7 @@ export default function OperationTwin({ project, climate, operationResult }) {
   })();
   const hasData = annualKg !== null && annualKg > 0;
   const tonnes = annualKg === null ? null : annualKg / 1000;
-  const intensity = hasData && Number(project?.area) > 0 ? annualKg / project.area : null;
+  const intensity = hasData && areaKnown && Number(project?.area) > 0 ? annualKg / project.area : null;
   const horizon = operationResult?.years || Number(climate?.years) || 0;
   const breakdown = STREAMS.map((stream) => ({
     name: stream.label,
